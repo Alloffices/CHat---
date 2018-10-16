@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.botengine.ai/help/webhooks/setting-up-your-webhook by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:33:46 GMT -->
+<head>
+    
+    <title>Setting Up your Webhook</title>
+    
+    
+    <meta name="description" content="Create webhooks to provide efficient communication between the bot and your web services.">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/app1111.css?b17ac5664d1c85c875d6e31f7fb059c2c6963918">
+    <link rel="icon" href="../../assets/images/favicon.html">
+    <link rel="shortcuts icon" type="image/x-icon" href="../../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <meta name="slack-app-id" content="A7FTEHPEG">
+    <meta name="twitter:site" content="@botengineai" />
+    <meta name="twitter:creator" content="@botengineai" />
+    <meta property="og:url" content="setting-up-your-webhook/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Setting Up your Webhook" />
+    <meta property="og:description" content="Create webhooks to provide efficient communication between the bot and your web services." />
+    <meta property="og:image" content="https://cdn.botengine.ai/website/og_image.png" />
+</head>
+<body>
+    
+    <div id="be"class="help__article">
+        <header>
+    <nav class="Nav theme">
+        <div class="container">
+            <a href="../../index.html" class="Nav__logo __small">
+                <img src="../../images/__nav_logo_mini.svg" alt="BotEngine.ai" />
+            </a>
+
+            <i class="material-icons Nav__menu_icon">menu</i>
+            
+            <a href="../../help.html" class="Nav__section_name"><span>Help Center</span></a>
+            
+            <a class="Nav__button" href="https://app.botengine.ai/">
+                <button class="default __theme_transparent_blue __theme_transparent" target="_blank">Login</button>
+            </a>
+            
+        </div>
+    </nav>
+</header>
+
+        
+
+
+
+
+
+<header class="Nav__header __violet_2">
+    <div class="wrapper"></div>
+</header>
+
+<section class="content">
+    <div class="container">
+        <nav class="__breadcrumbs">
+            <a href="../index.html"><span>Help</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <a href="index.html"><span>Webhooks</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <p href="#">Setting Up your Webhook</p>
+        </nav>
+    </div>
+
+    
+
+    <div class="container __small">
+        <nav id="help__article_nav" class="help__nav">
+            <p>Webhooks</p>
+            <ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="what-are-webhooks/index.html">What are Webhooks</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="active">
+                    <a href="setting-up-your-webhook/index.html">Setting Up your Webhook</a>
+                    
+                        
+
+    <ul>
+    
+        
+        
+        
+        
+        <li id="nav-setup-steps">
+            <a href="#setup-steps">Setup steps</a>
+        </li>
+    
+        
+        
+        
+        
+        <li id="nav-ready-to-use-examples">
+            <a href="#ready-to-use-examples">Ready to use examples</a>
+        </li>
+    
+    </ul>
+
+
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="create-your-first-webhook/index.html">Connect your first webhook</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="create_webhook_with_zapier/index.html">Setup webhooks with Zapier</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="verification-request/index.html">What is verification request</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="webhook-examples/index.html">Webhook examples</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+        </nav>
+
+        
+<div class="share-buttons">
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.botengine.ai%2fhelp%2fwebhooks%2fsetting-up-your-webhook%2f" target="_blank">
+       <i class="__fb"></i>
+   </a>
+
+   <a href="https://twitter.com/intent/tweet/?text=Setting%20Up%20your%20Webhook&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2fwebhooks%2fsetting-up-your-webhook%2f&amp;via=botengine.ai" target="_blank">
+       <i class="__twitter"></i>
+   </a>
+
+   <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2fwebhooks%2fsetting-up-your-webhook%2f&amp;title=Setting%20Up%20your%20Webhook&amp;summary=Setting%20Up%20your%20Webhook&amp;source=https%3a%2f%2fwww.botengine.ai%2fhelp%2fwebhooks%2fsetting-up-your-webhook%2f" target="_blank">
+       <i class="__linkedin"></i>
+   </a>
+</div>
+
+
+        <article>
+            <span class="title">Setting Up your Webhook</span>
+            <div class="__authors">
+    <div class="__images">
+        
+            <img src="../../images/help/authors/luiza-jurczyk.png" class="__no-scale" alt="BotEngine.ai" />
+        
+            <img src="../../images/help/authors/dariusz-zabrzenski.png" class="__no-scale" alt="BotEngine.ai" />
+        
+    </div>
+
+    <div class="__description">
+        <div class="title">
+            
+                <p class="author">luiza jurczyk</p>
+            
+                <p class="author">dariusz zabrzenski</p>
+            
+        </div>
+
+        <p>Last update: <data>
+  
+
+<time>30th of Aug 2018</time>
+</data></p>
+    </div>
+</div>
+
+            
+
+<h3 id="create-webhooks-to-provide-efficient-communication-between-the-bot-and-your-web-services">Create webhooks to provide efficient communication between the bot and your web services.</h3>
+
+<h2 id="setup-steps">Setup steps</h2>
+
+<p>To follow this guide to set up your webhook, all you need is a computer with <a href="https://nodejs.org/en/">Node.js</a> installed.</p>
+
+<blockquote class="__info">
+    <p>
+        <strong>Other Languages</strong><br>
+        To follow this guide, you will need to install Node.js, but you can write your webhook in whatever server-side language you like.
+    </p>
+</blockquote>
+
+<ol>
+    <li>
+        <h3 id="create-a-new-nodejs">Create a new Node.js project</h3>
+        <p>Run the following on the command line to create the needed files and dependencies:</p>
+
+<json>
+mkdir botengine-webhooks // creates a directory
+cd botengine-webhooks // open created directory
+touch index.js // creates empty index.js file
+npm init // creates package.json
+npm install express body-parser --save // installs using dependencies
+</json>
+
+    </li>
+    <li>
+        <h3 id="create-a-http-server">Create a HTTP server</h3>
+        <p>Add the following code to <code>index.js</code> and put your verification token into <code>token</code> variable.</p>
+        <blockquote>
+            <p>
+                <strong>What is verification token?</strong><br/>
+                Verification should be used to verify if the request comes from a trusted source. It’s optional and can be empty.
+            </p>
+        </blockquote>
+
+<json>
+'use strict';
+&nbsp;
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express().use(bodyParser.json()); // creates http server
+const token = 'VERIFICATION_TOKEN'; // type here your verification token
+&nbsp;
+app.listen(3000, () => console.log('[BotEngine] Webhook is listening'));
+</json>
+
+        <p>
+            This code creates an HTTP server that listens for requests on port 3000. For this guide we are using <a href="http://expressjs.com/">Express.js</a>, but you can do it using only <code>Node.js</code> or any other framework you love.
+        </p>
+    </li>
+    <li>
+        <h3 id="return-the-challenge">Return the challenge</h3>
+        <p>Add the following code to <code>index.js</code>:</p>
+
+<json>
+app.get('/', (req, res) => {
+    // check if verification token is correct
+    if (req.query.token !== token) {
+        return res.sendStatus(401);
+    }
+&nbsp;
+    // return challenge
+    return res.end(req.query.challenge);
+});
+</json>
+
+        <p>
+            This code is required to ensure your webhook is authentic and working.
+        </p>
+        <p>
+            In this code, we’re checking that your verification token is correct with the one sent in the request. We’re also returning a challenge response to confirm that your webhook works correctly.
+        </p>
+    </li>
+    <li>
+        <h3 id="webhook-endpoint">Webhook endpoint</h3>
+        <p>Add the following code to `index.js`:</p>
+
+<json>
+app.post('/', (req, res) => {
+    // check if verification token is correct
+    if (req.query.token !== token) {
+        return res.sendStatus(401);
+    }
+&nbsp;
+    // print request body
+    console.log(req.body);
+&nbsp;
+    // return a text response
+    const data = {
+        responses: [
+            {
+                type: 'text',
+                elements: ['Hi', 'Hello']
+            }
+        ]
+    };
+&nbsp;
+    res.json(data);
+});
+</json>
+
+        <p>
+            This code creates your webhook endpoint.
+        </p>
+        <p>
+            Similarly, as in the previous step, we have to check if your verifying token and the received token are the same. If these tokens are identical, BotEngine returns the object and an example bot response.
+        </p>
+        <p>
+            Note that the endpoint returns a <code>200OK</code> response, which tells the BotEngine the event that has been received.
+        </p>
+
+        <h3>Main steps in the verification process:</h3>
+
+        <ol>
+            <li>To create a verification token, chose a random string and assign its value to the <code>token</code> parameter.</li>
+            <li>Go to your BotEngine dashboard and select Webhooks. Enter the verification token in the appropriate field.</li>
+            <li>BotEngine sends a <code>GET</code> request to your webhook with the verification token in the <code>token</code> parameter of the query string.</li>
+            <li>Verify the received token with the verification token. If both string match, respond with the <code>challenge</code> parameter.</li>
+            <li>Your webhook has been verified successfully.</li>
+        </ol>
+    </li>
+
+    <li id="publish-your-webhook-service">
+        <h3 id="publish-your-webhook-service">Publish your webhook server</h3>
+        <p>
+            In this tutorial we’re using <code>ngrok</code> which exposes local servers behind NATs and firewalls to the public internet over secure tunnels. For production usage you should deploy your webhook code to the server of your choice. This can be your own hardware or cloud-based service like AWS or Heroku.
+        </p>
+
+        <ol>
+            <li>Run the following command to start your webhook on the localhost server: <code>node index.js</code>.</li>
+            <li>
+                Install <code>ngrok</code> to expose the web server, you’ve just created, running on your local machine to the internet. Most people set an alias for ngrok or keep it in their user folder for easy access in the command line.
+
+                <blockquote class="__info">
+                    <p>
+                        On Linux and OSX you can unzip ngrok from a terminal with the following command <code>$ unzip /path/to/ngrok.zip</code>. On Windows, just double click ngrok.zip.
+                    </p>
+                </blockquote>
+            </li>
+            <li>
+                In the folder with the created <code>index.js</code> file, run the following command: <code>node index.js</code>
+            </li>
+            <li>
+                Run ngrok in a new terminal window to listen on the port 3000. <code>./ngrok http 3000</code>
+            </li>
+            <li>
+                Now you should see a similar screen the the one below. Note that the address in the <code>Forwarding</code> line states the public address of your webhook. In this case, it is <code>https://4f1aabc7.ngrok.io</code>. Save this address for later. <img src="../../images/help/__webhooks-set-up-webhook.png">
+            </li>
+        </ol>
+    </li>
+
+    <li>
+        <h3 id="set-up-webhook-in-botengine">Set up webhook in BotEngine</h3>
+        <ol>
+            <li>Go to BotEngine app and select <strong>integrations</strong> from the left panel of your dashboard.<img src="../../images/help/__webhooks-1a.png"></li>
+            <li>Go to <strong>workflow</strong> and select <strong>webhooks</strong>. <img src="../../images/help/__webhooks-1b.png"></li>
+            <li>Click on Create new webhook button. <img src="../../images/help/__webhooks-1.png"></li>
+            <li>Now you’re in the webhook view. Give your webhook a name, to quickly identify it and paste its URL. In this example: <code>https://4f1aabc7.ngrok.io</code>. <img src="../../images/help/__webhooks-4.png"></li>
+            <li>Enter the verification token chosen in step 2.</li>
+            <li>Click  the save button to keep your changes.</li>
+        </ol>
+    </li>
+
+    <li>
+        <h3 id="connect-interaction-with-created-webhook">Connect interaction with created webhook</h3>
+        <ol>
+            <li>
+                Go to the interaction you want to connect your webhook with and select the bot responses section.
+            </li>
+            <li><strong>Select your webhook.</strong> You can identify it by it’s name. <img src="../../images/help/__webhooks-3.png"></li>
+            <li>Click on the <code>save</code> button to keep your changes.</li>
+        </ol>
+    </li>
+
+    <li>
+        <h3 id="test-your-story-with-webhooks">Test your story with webhooks</h3>
+        <p>Now your webhook is ready to test. A triggered interaction that has a webhook should send, as the response, the message from your webhook.</p>
+    </li>
+</ol>
+
+<h2 id="ready-to-use-examples">Ready to use examples</h2>
+
+<ul>
+<li><a href="https://github.com/BotEngineAI/nodejs-webhook-example">Node.js without any libraries</a></li>
+<li><a href="https://github.com/BotEngineAI/nodejs-express-webhook-example">Node.js using express + body-parser</a></li>
+<li><a href="https://github.com/BotEngineAI/php-webhook-example">PHP</a></li>
+<li><a href="https://github.com/BotEngineAI/nodejs-firebase-webhook-example">Firebase example</a></li>
+</ul>
+
+            
+            <p class="__navigation">
+                <a href="create-your-first-webhook/index.html"><span>Go to next article</span> <i class="material-icons">arrow_forward</i></a>
+            </p>
+            
+        </article>
+    </div>
+</section>
+
+
+        <footer>
+    <div class="container">
+        <div class="paragraph">
+            <nav>
+                <p>Product</p>
+                <ul class="Footer__menu">
+                    <li class="active"><a href="../../index.html">Home</a></li>
+                    <li><a href="../../features.html">Features</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Integrations</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../integrations/livechat.html">LiveChat</a></li>
+                    <li><a href="../../integrations/chat-widget.html">Chat widget</a></li>
+                    <li><a href="../../integrations/slack.html">Slack</a></li>
+                    <li><a href="../integrations/facebook-messenger-bot/index.html" target="_blank">Messenger</a></li>
+                    <li><a href="../integrations/chatio-bot/index.html" target="_blank">Chat.io</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Support</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../help.html">Help center</a></li>
+                    <li><a href="../../experts.html">Experts marketplace</a></li>
+                    <li><a href="../../docs.html">Docs</a></li>
+                    <li><a href="https://www.facebook.com/groups/295034011008221/" target="_blank">Community group</a></li>
+                </ul>
+            </nav>
+            <img src="../../images/logo_min.svg" alt="BotEngine.ai" />
+        </div>
+        <div class="paragraph">
+            <a href="https://www.facebook.com/BotEngineAI" target="_blank"><i class="__fb"></i></a>
+            <a href="https://twitter.com/BotEngineAI" target="_blank"><i class="__twitter"></i></a>
+            <a href="https://www.producthunt.com/posts/botengine" target="_blank"><i class="__product_hunt"></i></a>
+        </div>
+        <div class="paragraph">
+            <ul class="Footer__menu_inline">
+                <li><a href="../../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="Footer__copyright">
+                Copyright © 2018 LiveChat, Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NQCSXSR');
+    </script>
+    <script src="../../js/appdf78.js?129fd06bf39a6f9bdaadab146db02bb5a1f552c7"></script>
+</body>
+
+<!-- Mirrored from www.botengine.ai/help/webhooks/setting-up-your-webhook by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:33:54 GMT -->
+</html>

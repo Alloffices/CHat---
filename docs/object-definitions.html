@@ -1,0 +1,3795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.botengine.ai/docs/object-definitions by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:29:26 GMT -->
+<head>
+    
+    <title>Object definitions | BotEngine AI API</title>
+    
+    
+    <meta name="description" content="Object definitions for main API elements.">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/app9fbe.css?e7d12155370a677167d86b157ca4115085076fe7">
+    <link rel="icon" href="../assets/images/favicon.html">
+    <link rel="shortcuts icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <meta name="slack-app-id" content="A7FTEHPEG">
+    <meta name="twitter:site" content="@botengineai" />
+    <meta name="twitter:creator" content="@botengineai" />
+    <meta property="og:url" content="object-definitions/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Object definitions | BotEngine AI API" />
+    <meta property="og:description" content="Object definitions for main API elements." />
+    <meta property="og:image" content="https://cdn.botengine.ai/website/og_image.png" />
+</head>
+<body>
+    
+    <div id="be"class="docs">
+        <header>
+    <nav class="Nav theme">
+        <div class="container">
+            <a href="../index.html" class="Nav__logo __small">
+                <img src="../images/__nav_logo_mini.svg" alt="BotEngine.ai" />
+            </a>
+
+            <i class="material-icons Nav__menu_icon">menu</i>
+            
+            <a href="../docs.html" class="Nav__section_name"><span>Docs</span></a>
+            
+            <a class="Nav__button" href="https://app.botengine.ai/">
+                <button class="default __theme_transparent_blue __theme_transparent" target="_blank">Login</button>
+            </a>
+            
+            <div class="Nav__theme_switch">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+        </div>
+    </nav>
+</header>
+
+        
+    <header class="Nav__header">
+        <div class="container __small">
+            <div class="wrapper">
+                <h1>Build your bot using BotEngine API</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="docs__container">
+        <div class="container">
+            <nav id="docs__nav" class="docs__nav">
+    <ul>
+        
+        
+        
+        
+
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-introduction" >
+                <a href="introduction.html">Introduction</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-basic-api-usage"><a href="#basic-api-usage">Basic API usage</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-authentication"><a href="#authentication">Authentication</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-authentication-example"><a href="#authentication-example">Authentication example</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-error-handling"><a href="#error-handling">Error handling</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+                                <ul>
+                            
+
+                            
+
+                            
+                                </li>
+                            
+                        
+                        <li id="nav-http-status-codes-summary"><a href="#http-status-codes-summary">HTTP status codes summary</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+                                </ul>
+                            
+
+                            
+                        
+                        <li id="nav-data-format"><a href="#data-format">Data format</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-stories" >
+                <a href="stories.html">Stories</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-list-all-stories"><a href="#list-all-stories">List all stories</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-a-single-story"><a href="#get-a-single-story">Get a single story</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-add-a-new-story"><a href="#add-a-new-story">Add a new story</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-a-story"><a href="#update-a-story">Update a story</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-delete-a-story"><a href="#delete-a-story">Delete a story</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-interactions" >
+                <a href="interactions.html">Interactions</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-list-all-story-interactions"><a href="#list-all-story-interactions">List all story interactions</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-a-single-interaction"><a href="#get-a-single-interaction">Get a single interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-add-a-root-interaction"><a href="#add-a-root-interaction">Add a root interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-add-a-child-interaction"><a href="#add-a-child-interaction">Add a child interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-a-interaction"><a href="#update-a-interaction">Update a interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-delete-a-interaction"><a href="#delete-a-interaction">Delete a interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-common-object-definitions"><a href="#common-object-definitions">Common object definitions</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-default-interactions" >
+                <a href="default-interactions.html">Default interactions</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-get-welcome-interaction"><a href="#get-welcome-interaction">Get Welcome Interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-welcome-interaction"><a href="#update-welcome-interaction">Update Welcome Interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-fallback-interaction"><a href="#get-fallback-interaction">Get Fallback Interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-fallback-interaction"><a href="#update-fallback-interaction">Update Fallback Interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-common-object-definitions"><a href="#common-object-definitions">Common object definitions</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-user-entities" >
+                <a href="user-entities.html">User entities</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-list-all-user-entities"><a href="#list-all-user-entities">List all user entities</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-single-entity"><a href="#get-single-entity">Get single entity</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-add-new-entity"><a href="#add-new-entity">Add new entity</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-entity"><a href="#update-entity">Update entity</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-delete-entity"><a href="#delete-entity">Delete entity</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-common-object-definitions"><a href="#common-object-definitions">Common object definitions</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-talk-with-bot" >
+                <a href="talk-with-bot.html">Talk with bot</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-send-a-message"><a href="#send-a-message">Send a message</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-trigger-welcome-interaction"><a href="#trigger-welcome-interaction">Trigger welcome interaction</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-webhooks" >
+                <a href="webhooks.html">Webhooks</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-list-all-webhooks"><a href="#list-all-webhooks">List all Webhooks</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-a-specific-webhook"><a href="#get-a-specific-webhook">Get a specific webhook</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-create-a-webhook"><a href="#create-a-webhook">Create a webhook</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-a-webhook"><a href="#update-a-webhook">Update a webhook</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-delete-a-webhook"><a href="#delete-a-webhook">Delete a webhook</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-common-object-definitions"><a href="#common-object-definitions">Common object definitions</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-archives" >
+                <a href="archives.html">Archives</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-get-list-of-chats"><a href="#get-list-of-chats">Get list of chats</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-single-chat"><a href="#get-single-chat">Get single chat</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-object-definitions" class="active">
+                <a href="object-definitions.html">Object definitions</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-responses"><a href="#responses">responses</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+                                <ul>
+                            
+
+                            
+
+                            
+                                </li>
+                            
+                        
+                        <li id="nav-text-response"><a href="#text-response">Text response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-image-response"><a href="#image-response">Image response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-quick-replies"><a href="#quick-replies">Quick replies</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-card-response"><a href="#card-response">Card response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-cards-response"><a href="#cards-response">Cards response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-button-response"><a href="#button-response">Button response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-end-response"><a href="#end-response">End response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-webhook-response"><a href="#webhook-response">Webhook response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-go-to-response"><a href="#go-to-response">Go to response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+                                </ul>
+                            
+
+                            
+                        
+                        <li id="nav-fulfillment"><a href="#fulfillment">fulfillment</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-filters"><a href="#filters">filters</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+                                <ul>
+                            
+
+                            
+
+                            
+                                </li>
+                            
+                        
+                        <li id="nav-attribute-filter"><a href="#attribute-filter">Attribute filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-lifespan-filter"><a href="#lifespan-filter">Lifespan filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-score-filter"><a href="#score-filter">Score filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-incomplete-filter"><a href="#incomplete-filter">Incomplete filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-resolvedquery-filter"><a href="#resolvedquery-filter">ResolvedQuery filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-trigger-filter"><a href="#trigger-filter">Trigger filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+                                </ul>
+                            
+
+                            
+                        
+                        <li id="nav-rules"><a href="#rules">rules</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+                                <ul>
+                            
+
+                            
+
+                            
+                                </li>
+                            
+                        
+                        <li id="nav-is-rule"><a href="#is-rule">Is rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-is-not-rule"><a href="#is-not-rule">Is not rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-empty-rule"><a href="#empty-rule">Empty rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-contains-rule"><a href="#contains-rule">Contains rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-not-contains-rule"><a href="#not-contains-rule">Not contains rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-greater-rule"><a href="#greater-rule">Greater rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-less-rule"><a href="#less-rule">Less rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-greater-or-equal-rule"><a href="#greater-or-equal-rule">Greater or equal rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-less-or-equal-rule"><a href="#less-or-equal-rule">Less or equal rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-longer-rule"><a href="#longer-rule">Longer rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-shorter-rule"><a href="#shorter-rule">Shorter rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+                                </ul>
+                            
+
+                            
+                        
+                        <li id="nav-result"><a href="#result">result</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-samples" >
+                <a href="samples.html">Samples</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-webhook-integration-examples"><a href="#webhook-integration-examples">Webhook integration examples</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </ul>
+</nav>
+
+            <div class="docs__main">
+                
+        		<article>
+                    
+                        
+
+<h1 id="object-defintions">Object defintions</h1>
+
+<h2 id="responses">responses</h2>
+
+<p>Possible responses:</p>
+
+<ul>
+<li><a href="#text-response">Text response</a></li>
+<li><a href="#image-response">Image response</a></li>
+<li><a href="#quick-replies">Quick replies</a></li>
+<li><a href="#card">Card response</a></li>
+<li><a href="#cards-response">Cards response</a></li>
+<li><a href="#button-response">Button response</a></li>
+<li><a href="#end-response">End response</a></li>
+<li><a href="#webhook-response">Webhook response</a></li>
+<li><a href="#go-to-response">Go to response</a></li>
+</ul>
+
+<p>Array of objects.</p>
+
+<h3 id="text-response">Text response</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>text</code></td>
+</tr>
+
+<tr>
+<td><code>elements</code></td>
+<td>Array.&lt;String&gt;</td>
+<td>The array of objects. The maximum size of the response array is 99 objects.  <br/><br/><code>Array (1, 20).String(1, 1024)</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array (1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+            &ldquo;elements&rdquo;: [&ldquo;Hi, how are you&rdquo;, &ldquo;Hello!&rdquo;],
+            &ldquo;filters&rdquo;: []
+        }
+    ]
+}
+</json></p>
+
+<h3 id="image-response">Image response</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>image</code></td>
+</tr>
+
+<tr>
+<td><code>imageUrl</code></td>
+<td>String</td>
+<td>Image url, must be valid URL. <br/><br/><code>String(1, 1024)</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array (1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;image&rdquo;,
+            &ldquo;imageUrl&rdquo;: &ldquo;your-image-url&rdquo;,
+            &ldquo;filters&rdquo;: []
+        }
+    ]
+}
+</json></p>
+
+<h3 id="quick-replies">Quick replies</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>quickReplies</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Title for quick reply response. <br/><br/><code>String(1, 640)</code></td>
+</tr>
+
+<tr>
+<td><code>buttons</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td>An array of element objects that suggests possible responses. <br/><br/><code>Array(1, 11)</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array(1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;quickReplies&rdquo;,
+            &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit amet.&rdquo;,
+            &ldquo;filters&rdquo;: [],
+            &ldquo;buttons&rdquo;: [
+                {
+                    &ldquo;type&rdquo;: &ldquo;postback&rdquo;,
+                    &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit.&rdquo;,
+                    &ldquo;value&rdquo;: &ldquo;developer_message&rdquo;
+                }
+            ]
+        }
+    ]
+}
+</json></p>
+
+<h3 id="card-response">Card response</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>card</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Title for card response. <br/><br/><code>String(1, 80)</code></td>
+</tr>
+
+<tr>
+<td><code>subtitle</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Title for card response. <br/><br/><code>String(0, 80)</code></td>
+</tr>
+
+<tr>
+<td><code>imageUrl</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Image for card response. <br/><br/><code>String(0, 2048)</code></td>
+</tr>
+
+<tr>
+<td><code>buttons</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td>An array of <a href="#buttons">element</a> objects.<br/><br/><code>Array(1, 3)</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array(1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;card&rdquo;,
+            &ldquo;filters&rdquo;: [],
+            &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit amet.&rdquo;,
+            &ldquo;subtitle&rdquo;: &ldquo;qui dolorem ipsum quia dolor sit amet,&rdquo;,
+            &ldquo;imageUrl&rdquo;: &ldquo;<a href="https://i.imgur.com/3yPwOLC.jpg"">https://i.imgur.com/3yPwOLC.jpg&quot;</a>,
+            &ldquo;buttons&rdquo;: [
+                {
+                    &ldquo;type&rdquo;: &ldquo;postback&rdquo;,
+                    &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit.&rdquo;,
+                    &ldquo;value&rdquo;: &ldquo;developer_message&rdquo;
+                }
+            ]
+        }
+    ]
+}
+</json></p>
+
+<h3 id="cards-response">Cards response</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>cards</code></td>
+</tr>
+
+<tr>
+<td><code>elements</code></td>
+<td>String</td>
+<td>Array of <a href="#card">cards</a> elements. <br/><br/><code>Array(1, 10)</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array(1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="card"><code>card</code></h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Title for card response. <br/><br/><code>String(1, 80)</code></td>
+</tr>
+
+<tr>
+<td><code>subtitle</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Title for card response. <br/><br/><code>String(0, 80)</code></td>
+</tr>
+
+<tr>
+<td><code>imageUrl</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Image for card response. <br/><br/><code>String(0, 2048)</code></td>
+</tr>
+
+<tr>
+<td><code>buttons</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td>An array of <a href="#buttons">element</a> objects.<br/><br/><code>Array(1, 3)</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array(1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;cards&rdquo;,
+            &ldquo;filters&rdquo;: [],
+            &ldquo;elements&rdquo;: [
+                {
+                    &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit amet.&rdquo;,
+                    &ldquo;subtitle&rdquo;: &ldquo;qui dolorem ipsum quia dolor sit amet,&rdquo;,
+                    &ldquo;imageUrl&rdquo;: &ldquo;<a href="https://i.imgur.com/3yPwOLC.jpg"">https://i.imgur.com/3yPwOLC.jpg&quot;</a>,
+                    &ldquo;buttons&rdquo;: [
+                        {
+                            &ldquo;type&rdquo;: &ldquo;postback&rdquo;,
+                            &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit.&rdquo;,
+                            &ldquo;value&rdquo;: &ldquo;developer_message&rdquo;
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+</json></p>
+
+<h3 id="button-response">Button response</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>button</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Title for button response. <br/><br/><code>String(1, 640)</code></td>
+</tr>
+
+<tr>
+<td><code>buttons</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td>An array of <a href="#buttons">element</a> objects.<br/><br/><code>Array(1, 3)</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array(1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;button&rdquo;,
+            &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit amet.&rdquo;,
+            &ldquo;buttons&rdquo;: [
+                {
+                    &ldquo;type&rdquo;: &ldquo;postback&rdquo;,
+                    &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit.&rdquo;,
+                    &ldquo;value&rdquo;: &ldquo;developer_message&rdquo;
+                }
+            ]
+        }
+    ]
+}
+</json></p>
+
+<h3 id="end-response">End response</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>end</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array(1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;end&rdquo;,
+            &ldquo;filters&rdquo;: []
+        }
+    ]
+}
+</json></p>
+
+<h3 id="webhook-response">Webhook response</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>webhook</code></td>
+</tr>
+
+<tr>
+<td><code>webhookId</code></td>
+<td>String</td>
+<td>Must be valid webhook id.<br/><br/><code>String(24)</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array(1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;webhook&rdquo;,
+            &ldquo;webhookId&rdquo;: &ldquo;507f1f77bcf86cd799439011&rdquo;,
+            &ldquo;filters&rdquo;: []
+        }
+    ]
+}
+</json></p>
+
+<h3 id="go-to-response">Go to response</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>goto</code></td>
+</tr>
+
+<tr>
+<td><code>interactionId</code></td>
+<td>String</td>
+<td>Must be valid interaction id.<br/><br/><code>String(24)</code></td>
+</tr>
+
+<tr>
+<td><code>filters</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td><strong>Optional</strong>. <a href="#filters">Filters</a> for response.<br/><br/><code>Array(1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;goto&rdquo;,
+            &ldquo;interactionId&rdquo;: &ldquo;507f191e810c19729de860ea&rdquo;,
+            &ldquo;filters&rdquo;: []
+        }
+    ]
+}
+</json></p>
+
+<h4 id="buttons"><code>buttons</code></h4>
+
+<h4 id="postback-button">Postback button</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>postback</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Button title. <br/><br/><code>String(1, 20)</code></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String</td>
+<td>Postback value. <br/><br/><code>String(1, 1000)</code></td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><strong>Hint:</strong> If you want all buttons to have the same name, use the postback field to give each of them a unique name. It will help BotEngine to distinguish which button has been clicked.</p>
+</blockquote>
+
+<h4 id="goto-button">GoTo button</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>goto</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Button title. <br/><br/><code>String(1, 20)</code></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String</td>
+<td>Interaction ID. <br/><br/><code>String(1, 24)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="url-button">URL button</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>url</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Button title. <br/><br/><code>String(1, 20)</code></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String</td>
+<td>Valid URL. <br/><br/><code>String(1, 2048)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="phone-button">Phone button</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>phone</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Button title. <br/><br/><code>String(1, 20)</code></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String</td>
+<td>Valid phone number. <strong>Remember to put <code>+</code> at the beginning of the phone number.</strong> <br/><br/><code>String(3, 16)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="fulfillment">fulfillment</h2>
+
+<p>Definitions:</p>
+
+<ul>
+<li><a href="object-definitions/index.html#text-fulfillment">Text fulfillment</a></li>
+<li><a href="object-definitions/index.html#image-fulfillment">Image fulfillment</a></li>
+<li><a href="object-definitions/index.html#quick-replies-fulfillment">Quick replies fulfillment</a></li>
+<li><a href="object-definitions/index.html#card-fulfillment">Card fulfillment</a></li>
+<li><a href="object-definitions/index.html#cards-fulfillment">Cards fulfillment</a></li>
+<li><a href="object-definitions/index.html#button-fulfillment">Button fulfillment</a></li>
+<li><a href="object-definitions/index.html#end-fulfillment">End fulfillment</a></li>
+<li><a href="object-definitions/index.html#webhook-fulfillment">Webhook fulfillment</a></li>
+<li><a href="object-definitions/index.html#go-to-fulfillment">Go to fulfillment</a></li>
+</ul>
+
+<h4 id="text-fulfillment">Text fulfillment</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>text</code></td>
+</tr>
+
+<tr>
+<td><code>message</code></td>
+<td>String</td>
+<td>Response <br/><br/><code>String(1, 1024)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;fulfillment&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+            &ldquo;message&rdquo;: &ldquo;Hi, how are you&rdquo;
+        }
+    ]
+}
+</json></p>
+
+<h4 id="image-fulfillment">Image fulfillment</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>image</code></td>
+</tr>
+
+<tr>
+<td><code>imageUrl</code></td>
+<td>String</td>
+<td>Image url <br/><br/><code>String(1, 1024)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;fulfillment&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;image&rdquo;,
+            &ldquo;imageUrl&rdquo;: &ldquo;<a href="https://i.imgur.com/3yPwOLC.jpg"">https://i.imgur.com/3yPwOLC.jpg&quot;</a>
+        }
+    ]
+}
+</json></p>
+
+<h4 id="quick-replies-fulfillment">Quick replies fulfillment</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>quickReplies</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Title for quick reply. <br/><br/><code>String(1, 640)</code></td>
+</tr>
+
+<tr>
+<td><code>buttons</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td>Quick replies buttons.</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;fulfillment&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;quickReplies&rdquo;,
+            &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit amet.&rdquo;,
+            &ldquo;buttons&rdquo;: [
+                {
+                    &ldquo;type&rdquo;: &ldquo;postback&rdquo;,
+                    &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit.&rdquo;,
+                    &ldquo;value&rdquo;: &ldquo;developer_message&rdquo;
+                }
+            ]
+        }
+    ]
+}
+</json></p>
+
+<h4 id="card-fulfillment">Card fulfillment</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>card</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Title for card response. <br/><br/><code>String(1, 80)</code></td>
+</tr>
+
+<tr>
+<td><code>subtitle</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Title for card response. <br/><br/><code>String(0, 80)</code></td>
+</tr>
+
+<tr>
+<td><code>imageUrl</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Image for card response. <br/><br/><code>String(0, 2048)</code></td>
+</tr>
+
+<tr>
+<td><code>buttons</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td>An array of <a href="#buttons">element</a> objects.<br/><br/><code>Array(1, 3)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;fulfillment&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;card&rdquo;,
+            &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit amet.&rdquo;,
+            &ldquo;subtitle&rdquo;: &ldquo;qui dolorem ipsum quia dolor sit amet,&rdquo;,
+            &ldquo;imageUrl&rdquo;: &ldquo;<a href="https://i.imgur.com/3yPwOLC.jpg"">https://i.imgur.com/3yPwOLC.jpg&quot;</a>,
+            &ldquo;buttons&rdquo;: [
+                {
+                    &ldquo;type&rdquo;: &ldquo;postback&rdquo;,
+                    &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit.&rdquo;,
+                    &ldquo;value&rdquo;: &ldquo;developer_message&rdquo;
+                }
+            ]
+        }
+    ]
+}
+</json></p>
+
+<h4 id="cards-fulfillment">Cards fulfillment</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>card</code></td>
+</tr>
+
+<tr>
+<td><code>elements</code></td>
+<td>String</td>
+<td>Array of <a href="#card">cards</a> elements. <br/><br/><code>Array(1, 10)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="card-1"><code>card</code></h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Title for card response. <br/><br/><code>String(1, 80)</code></td>
+</tr>
+
+<tr>
+<td><code>subtitle</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Title for card response. <br/><br/><code>String(0, 80)</code></td>
+</tr>
+
+<tr>
+<td><code>imageUrl</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Image for card response. <br/><br/><code>String(0, 2048)</code></td>
+</tr>
+
+<tr>
+<td><code>buttons</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td>An array of <a href="#buttons">element</a> objects.<br/><br/><code>Array(1, 3)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;fulfillment&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;cards&rdquo;,
+            &ldquo;filters&rdquo;: [],
+            &ldquo;elements&rdquo;: [
+                {
+                    &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit amet.&rdquo;,
+                    &ldquo;subtitle&rdquo;: &ldquo;qui dolorem ipsum quia dolor sit amet,&rdquo;,
+                    &ldquo;imageUrl&rdquo;: &ldquo;<a href="https://i.imgur.com/3yPwOLC.jpg"">https://i.imgur.com/3yPwOLC.jpg&quot;</a>,
+                    &ldquo;buttons&rdquo;: [
+                        {
+                            &ldquo;type&rdquo;: &ldquo;postback&rdquo;,
+                            &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit.&rdquo;,
+                            &ldquo;value&rdquo;: &ldquo;developer_message&rdquo;
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+</json></p>
+
+<h4 id="button-fulfillment">Button fulfillment</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>button</code></td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td>String</td>
+<td>Title for button response. <br/><br/><code>String(1, 640)</code></td>
+</tr>
+
+<tr>
+<td><code>buttons</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td>An array of <a href="#buttons">element</a> objects.<br/><br/><code>Array(1, 3)</code></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;fulfillment&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;button&rdquo;,
+            &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit amet.&rdquo;,
+            &ldquo;buttons&rdquo;: [
+                {
+                    &ldquo;type&rdquo;: &ldquo;postback&rdquo;,
+                    &ldquo;title&rdquo;: &ldquo;Lorem ipsum dolor sit.&rdquo;,
+                    &ldquo;value&rdquo;: &ldquo;developer_message&rdquo;
+                }
+            ]
+        }
+    ]
+}
+</json></p>
+
+<h4 id="end-fulfillment">End fulfillment</h4>
+
+<blockquote>
+<p>This response is visible only in debug mode</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>end</code></td>
+</tr>
+
+<tr>
+<td><code>used</code></td>
+<td>Boolean</td>
+<td>Set to true if the response was used</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;fulfillment&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;end&rdquo;,
+            &ldquo;used&rdquo;: true
+        }
+    ]
+}
+</json></p>
+
+<h4 id="webhook-fulfillment">Webhook fulfillment</h4>
+
+<blockquote>
+<p>This response is visible only in debug mode</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>webhook</code></td>
+</tr>
+
+<tr>
+<td><code>webhookId</code></td>
+<td>String</td>
+<td>Webhook id.<br/><br/><code>String(24)</code></td>
+</tr>
+
+<tr>
+<td><code>error</code></td>
+<td>String</td>
+<td>Error message</td>
+</tr>
+
+<tr>
+<td><code>used</code></td>
+<td>Boolean</td>
+<td>Set to true if the webhook was triggered correctly</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;fulfillment&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;webhook&rdquo;,
+            &ldquo;webhookId&rdquo;: &ldquo;507f1f77bcf86cd799439011&rdquo;,
+            &ldquo;used&rdquo;: false,
+            &ldquo;error&rdquo;: &ldquo;foo.example.com’s server DNS address could not be found.&rdquo;
+        }
+    ]
+}
+</json></p>
+
+<h4 id="go-to-fulfillment">Go to fulfillment</h4>
+
+<blockquote>
+<p>This response is visible only in debug mode</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String</td>
+<td><code>goto</code></td>
+</tr>
+
+<tr>
+<td><code>interactionId</code></td>
+<td>String</td>
+<td>Interaction id.<br/><br/><code>String(24)</code></td>
+</tr>
+
+<tr>
+<td><code>used</code></td>
+<td>Boolean</td>
+<td>Set to true if response was used</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Example json</strong></p>
+
+<p><json>
+{
+    &ldquo;responses&rdquo;: [
+        {
+            &ldquo;type&rdquo;: &ldquo;goto&rdquo;,
+            &ldquo;interactionId&rdquo;: &ldquo;507f191e810c19729de860ea&rdquo;,
+            &ldquo;filters&rdquo;: []
+        }
+    ]
+}
+</json></p>
+
+<h2 id="filters">filters</h2>
+
+<p>Array of filter objects.</p>
+
+<h4 id="types-of-filters">Types of filters</h4>
+
+<ul>
+<li><a href="#attribute-filter">attribute</a></li>
+<li><a href="#lifespan-filter">lifespan</a></li>
+<li><a href="#score-filter">score</a></li>
+<li><a href="#incomplete-filter">incomplete</a></li>
+<li><a href="#resolvedQuery-filter">resolvedQuery</a></li>
+<li><a href="#trigger-filter">trigger</a></li>
+</ul>
+
+<h3 id="attribute-filter">Attribute filter</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String(<code>attribute</code>)</td>
+</tr>
+
+<tr>
+<td><code>alias</code></td>
+<td>String(1, 128)</td>
+</tr>
+
+<tr>
+<td><code>rule</code></td>
+<td><a href="#string-rules">StringRule</a>, <a href="#numeric-rules">NumericRule</a></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String(1,1024), Number, Boolean</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;attribute&rdquo;,
+          &ldquo;alias&rdquo;: &ldquo;my-param&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;is&rdquo;,
+          &ldquo;value&rdquo;: &ldquo;my-value&rdquo;
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="lifespan-filter">Lifespan filter</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String(<code>lifespan</code>)</td>
+</tr>
+
+<tr>
+<td><code>rule</code></td>
+<td><a href="#numeric-rules">NumericRule</a></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Number(0,10)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-1">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;lifespan&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;is&rdquo;,
+          &ldquo;value&rdquo;: 0
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="score-filter">Score filter</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String(<code>score</code>)</td>
+</tr>
+
+<tr>
+<td><code>rule</code></td>
+<td><a href="#numeric-rules">NumericRule</a></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Float(0,1) (up to 2 precision)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-2">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;score&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;is&rdquo;,
+          &ldquo;value&rdquo;: 0.2
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="incomplete-filter">Incomplete filter</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String(<code>incomplete</code>)</td>
+</tr>
+
+<tr>
+<td><code>rule</code></td>
+<td><a href="#is-rule">IsRule</a></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-3">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;incomplete&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;is&rdquo;,
+          &ldquo;value&rdquo;: false
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="resolvedquery-filter">ResolvedQuery filter</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String(<code>resolvedQuery</code>)</td>
+</tr>
+
+<tr>
+<td><code>rule</code></td>
+<td><a href="#string-rules">StringRule</a></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String(1,1024), Boolean</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-4">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;resolvedQuery&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;is&rdquo;,
+          &ldquo;value&rdquo;: &ldquo;welcome&rdquo;
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="trigger-filter">Trigger filter</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>String(<code>trigger</code>)</td>
+</tr>
+
+<tr>
+<td><code>rule</code></td>
+<td><a href="#string-rules">StringRule</a></td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String(1,1024), Boolean</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-5">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;trigger&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;is&rdquo;,
+          &ldquo;value&rdquo;: &ldquo;welcome&rdquo;
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h2 id="rules">rules</h2>
+
+<h4 id="numeric-rules">Numeric rules</h4>
+
+<ul>
+<li><a href="#is-rule">is</a></li>
+<li><a href="#is-not-rule">isNot</a></li>
+<li><a href="#greater-rule">greater</a></li>
+<li><a href="#less-rule">less</a></li>
+<li><a href="#greater-or-equal-rule">greaterOrEqual</a></li>
+<li><a href="#less-or-equal-rule">lessOrEqual</a></li>
+</ul>
+
+<h4 id="string-rules">String rules</h4>
+
+<ul>
+<li><a href="#is-rule">is</a></li>
+<li><a href="#is-not-rule">isNot</a></li>
+<li><a href="#empty-rule">empty</a></li>
+<li><a href="#contains-rule">contains</a></li>
+<li><a href="#not-contains-rule">notContains</a></li>
+<li><a href="#longer-rule">longer</a></li>
+<li><a href="#shorter-rule">shorter</a></li>
+</ul>
+
+<h3 id="is-rule">Is rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>is</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String(1,1024)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-6">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;trigger&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;is&rdquo;,
+          &ldquo;value&rdquo;: &ldquo;welcome&rdquo;
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="is-not-rule">Is not rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>isNot</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String(1,1024)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-7">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;trigger&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;isNot&rdquo;,
+          &ldquo;value&rdquo;: &ldquo;welcome&rdquo;
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="empty-rule">Empty rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>empty</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-8">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;trigger&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;empty&rdquo;,
+          &ldquo;value&rdquo;: false
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="contains-rule">Contains rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>contains</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String(1,1024)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-9">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;trigger&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;contains&rdquo;,
+          &ldquo;value&rdquo;: &ldquo;welcome&rdquo;
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="not-contains-rule">Not contains rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>notContains</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>String(1,1024)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-10">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;trigger&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;notContains&rdquo;,
+          &ldquo;value&rdquo;: &ldquo;welcome&rdquo;
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="greater-rule">Greater rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>greater</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-11">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;attribute&rdquo;,
+          &ldquo;alias&rdquo;: &ldquo;my-param&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;greater&rdquo;,
+          &ldquo;value&rdquo;: 1337
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="less-rule">Less rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>less</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-12">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;attribute&rdquo;,
+          &ldquo;alias&rdquo;: &ldquo;my-param&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;less&rdquo;,
+          &ldquo;value&rdquo;: 1337
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="greater-or-equal-rule">Greater or equal rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>greaterOrEqual</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-13">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;attribute&rdquo;,
+          &ldquo;alias&rdquo;: &ldquo;my-param&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;greaterOrEqual&rdquo;,
+          &ldquo;value&rdquo;: 1337
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="less-or-equal-rule">Less or equal rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>lessOrEqual</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-14">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;attribute&rdquo;,
+          &ldquo;alias&rdquo;: &ldquo;my-param&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;lessOrEqual&rdquo;,
+          &ldquo;value&rdquo;: 1337
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="longer-rule">Longer rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>longer</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="example-15">Example</h4>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;attribute&rdquo;,
+          &ldquo;alias&rdquo;: &ldquo;my-param&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;longer&rdquo;,
+          &ldquo;value&rdquo;: 1337
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h3 id="shorter-rule">Shorter rule</h3>
+
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>rule</code></td>
+<td>String(<code>shorter</code>)</td>
+</tr>
+
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+
+<h5 id="example-16">Example</h5>
+
+<p><json>
+{
+  &ldquo;responses&rdquo;: [
+    {
+      &ldquo;type&rdquo;: &ldquo;text&rdquo;,
+      &ldquo;filters&rdquo;: [
+        {
+          &ldquo;type&rdquo;: &ldquo;attribute&rdquo;,
+          &ldquo;alias&rdquo;: &ldquo;my-param&rdquo;,
+          &ldquo;rule&rdquo;: &ldquo;shorter&rdquo;,
+          &ldquo;value&rdquo;: 1337
+        }
+      ],
+      &ldquo;elements&rdquo;: [&ldquo;hi&rdquo;, &ldquo;hello&rdquo;]
+    }
+  ]
+}
+</json></p>
+
+<h2 id="result">result</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>source</code></td>
+<td>String</td>
+<td>Source of your conversation. <br/><br/>Possible values: <code>custom</code>, <code>livechat</code>, <code>slack</code>, <code>messenger</code></td>
+</tr>
+
+<tr>
+<td><code>resolvedQuery</code></td>
+<td>String</td>
+<td>Your message.</td>
+</tr>
+
+<tr>
+<td><code>trigger</code></td>
+<td>String</td>
+<td>Name of executed trigger.</td>
+</tr>
+
+<tr>
+<td><code>status</code></td>
+<td>String</td>
+<td>Status object for your request.</td>
+</tr>
+
+<tr>
+<td><code>confidence</code></td>
+<td>Number</td>
+<td>Current confidence for your conversation session.</td>
+</tr>
+
+<tr>
+<td><code>lifespan</code></td>
+<td>Number</td>
+<td>Current lifespan for your conversation session.</td>
+</tr>
+
+<tr>
+<td><code>score</code></td>
+<td>Number</td>
+<td>Accuracy of matching.</td>
+</tr>
+
+<tr>
+<td><code>incomplete</code></td>
+<td>Boolean</td>
+<td>It is true if any of the required parameters are not filled.</td>
+</tr>
+
+<tr>
+<td><code>storyId</code></td>
+<td>String</td>
+<td>Your bot story id.</td>
+</tr>
+
+<tr>
+<td><code>interaction</code></td>
+<td>Object</td>
+<td>The interaction object that was called.</td>
+</tr>
+
+<tr>
+<td><a href="#parameters"><code>parameters</code></a></td>
+<td>Object</td>
+<td><a href="#parameters">Parameters</a> object which showing all the attributes collected in the current conversation.</td>
+</tr>
+
+<tr>
+<td><code>contexts</code></td>
+<td>Array.&lt;Object&gt;</td>
+<td>Array of objects which contains the entire conversation path in the form of successively triggered interactions.</td>
+</tr>
+
+<tr>
+<td><a href="#fulfillment"><code>fulfillment</code></a></td>
+<td>Array.&lt;Object&gt;</td>
+<td>Array of <a href="#fulfillment">objects</a> which includes all of bot responses.</td>
+</tr>
+</tbody>
+</table>
+
+                    
+        		</article>
+            </div>
+        </div>
+    </section>
+
+    <div class="docs__menu_toggle">
+        <i class="material-icons">menu</i>
+    </div>
+
+        <footer>
+    <div class="container">
+        <div class="paragraph">
+            <nav>
+                <p>Product</p>
+                <ul class="Footer__menu">
+                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li><a href="../features.html">Features</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Integrations</p>
+                <ul class="Footer__menu">
+                    <li><a href="../integrations/livechat.html">LiveChat</a></li>
+                    <li><a href="../integrations/chat-widget.html">Chat widget</a></li>
+                    <li><a href="../integrations/slack.html">Slack</a></li>
+                    <li><a href="../help/integrations/facebook-messenger-bot/index.html" target="_blank">Messenger</a></li>
+                    <li><a href="../help/integrations/chatio-bot/index.html" target="_blank">Chat.io</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Support</p>
+                <ul class="Footer__menu">
+                    <li><a href="../help.html">Help center</a></li>
+                    <li><a href="../experts.html">Experts marketplace</a></li>
+                    <li><a href="../docs.html">Docs</a></li>
+                    <li><a href="https://www.facebook.com/groups/295034011008221/" target="_blank">Community group</a></li>
+                </ul>
+            </nav>
+            <img src="../images/logo_min.svg" alt="BotEngine.ai" />
+        </div>
+        <div class="paragraph">
+            <a href="https://www.facebook.com/BotEngineAI" target="_blank"><i class="__fb"></i></a>
+            <a href="https://twitter.com/BotEngineAI" target="_blank"><i class="__twitter"></i></a>
+            <a href="https://www.producthunt.com/posts/botengine" target="_blank"><i class="__product_hunt"></i></a>
+        </div>
+        <div class="paragraph">
+            <ul class="Footer__menu_inline">
+                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="Footer__copyright">
+                Copyright © 2018 LiveChat, Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NQCSXSR');
+    </script>
+    <script src="../js/appd0d7.js?83a9b1ea4ff0347bce48aef0fb8ccc2d782da549"></script>
+</body>
+
+<!-- Mirrored from www.botengine.ai/docs/object-definitions by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:29:28 GMT -->
+</html>

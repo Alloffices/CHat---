@@ -1,0 +1,12 @@
+<svg width="695px" height="384px" viewBox="0 0 695 384" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-699.000000, -509.000000)" fill="#92D1FF">
+            <g transform="translate(645.000000, 67.000000)">
+                <g transform="translate(54.000000, 57.000000)">
+                    <polygon transform="translate(123.007505, 577.007505) scale(-1, 1) translate(-123.007505, -577.007505) " points="-69 769.015011 315.015011 769.015011 218.694297 672.694297 -69 385"></polygon>
+                    <polygon points="315 769.015011 699.015011 769.015011 602.694297 672.694297 315 385"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.botengine.ai/help/integrations/chatio-bot by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:25:27 GMT -->
+<head>
+    
+    <title>Connect your bot with chat.io</title>
+    
+    
+    <meta name="description" content="Integrate chat.io with BotEngine to automate common cases, and provide instant support for your clients.">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/app5820.css?050bab11a9cfa1e200cee3ee38902a15547a19a8">
+    <link rel="icon" href="../../assets/images/favicon.html">
+    <link rel="shortcuts icon" type="image/x-icon" href="../../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <meta name="slack-app-id" content="A7FTEHPEG">
+    <meta name="twitter:site" content="@botengineai" />
+    <meta name="twitter:creator" content="@botengineai" />
+    <meta property="og:url" content="chatio-bot/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Connect your bot with chat.io" />
+    <meta property="og:description" content="Integrate chat.io with BotEngine to automate common cases, and provide instant support for your clients." />
+    <meta property="og:image" content="https://cdn.botengine.ai/website/og_image.png" />
+</head>
+<body>
+    
+    <div id="be"class="help__article">
+        <header>
+    <nav class="Nav theme">
+        <div class="container">
+            <a href="../../index.html" class="Nav__logo __small">
+                <img src="../../images/__nav_logo_mini.svg" alt="BotEngine.ai" />
+            </a>
+
+            <i class="material-icons Nav__menu_icon">menu</i>
+            
+            <a href="../../help.html" class="Nav__section_name"><span>Help Center</span></a>
+            
+            <a class="Nav__button" href="https://app.botengine.ai/">
+                <button class="default __theme_transparent_blue __theme_transparent" target="_blank">Login</button>
+            </a>
+            
+        </div>
+    </nav>
+</header>
+
+        
+
+
+
+
+
+<header class="Nav__header __violet_2">
+    <div class="wrapper"></div>
+</header>
+
+<section class="content">
+    <div class="container">
+        <nav class="__breadcrumbs">
+            <a href="../index.html"><span>Help</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <a href="index.html"><span>Integrations</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <p href="#">Connect your bot with chat.io</p>
+        </nav>
+    </div>
+
+    
+
+    <div class="container __small">
+        <nav id="help__article_nav" class="help__nav">
+            <p>Integrations</p>
+            <ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="what-is-integration/index.html">What are integrations</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="chat-widget-integration/index.html">Connect your bot with Chat Widget</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="facebook-messenger-bot/index.html">Create your Facebook Messenger bot</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="active">
+                    <a href="chatio-bot/index.html">Connect your bot with chat.io</a>
+                    
+                        
+
+    <ul>
+    
+        
+        
+        
+        
+        <li id="nav-key-advantages">
+            <a href="#key-advantages">Key advantages</a>
+        </li>
+    
+        
+        
+        
+        
+        <li id="nav-how-does-the-chat-io-integration-work">
+            <a href="#how-does-the-chat-io-integration-work">How does the chat.io integration work</a>
+        </li>
+    
+        
+        
+        
+        
+        <li id="nav-how-to-integrate-your-bot-with-chat-io">
+            <a href="#how-to-integrate-your-bot-with-chat-io">How to integrate your bot with chat.io</a>
+        </li>
+    
+        
+        
+        
+        
+        <li id="nav-how-to-use-the-chat-io-integration">
+            <a href="#how-to-use-the-chat-io-integration">How to use the chat.io integration</a>
+        </li>
+    
+    </ul>
+
+
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="slack-integration/index.html">Connect your bot with Slack</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+        </nav>
+
+        
+<div class="share-buttons">
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.botengine.ai%2fhelp%2fintegrations%2fchatio-bot%2f" target="_blank">
+       <i class="__fb"></i>
+   </a>
+
+   <a href="https://twitter.com/intent/tweet/?text=Connect%20your%20bot%20with%20chat.io&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2fintegrations%2fchatio-bot%2f&amp;via=botengine.ai" target="_blank">
+       <i class="__twitter"></i>
+   </a>
+
+   <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2fintegrations%2fchatio-bot%2f&amp;title=Connect%20your%20bot%20with%20chat.io&amp;summary=Connect%20your%20bot%20with%20chat.io&amp;source=https%3a%2f%2fwww.botengine.ai%2fhelp%2fintegrations%2fchatio-bot%2f" target="_blank">
+       <i class="__linkedin"></i>
+   </a>
+</div>
+
+
+        <article>
+            <span class="title">Connect your bot with chat.io</span>
+            <div class="__authors">
+    <div class="__images">
+        
+            <img src="../../images/help/authors/luiza-jurczyk.png" class="__no-scale" alt="BotEngine.ai" />
+        
+    </div>
+
+    <div class="__description">
+        <div class="title">
+            
+                <p class="author">luiza jurczyk</p>
+            
+        </div>
+
+        <p>Last update: <data>
+  
+
+<time>8th of Aug 2018</time>
+</data></p>
+    </div>
+</div>
+
+            
+
+<h3 id="chat-io-is-a-comprehensive-intelligent-platform-that-helps-you-to-provide-the-highest-customer-service-experience-integrate-chat-io-with-botengine-to-automate-common-cases-and-never-let-your-clients-wait-for-help">Chat.io is a comprehensive intelligent platform that helps you to provide the highest customer service experience. Integrate chat.io with BotEngine to automate common cases and never let your clients wait for help.</h3>
+
+<h2 id="key-advantages">Key advantages</h2>
+
+<ul>
+<li>provides <strong><sup>24</sup>&frasl;<sub>7</sub></strong> customer service</li>
+<li><strong>filters out</strong> incoming spam chats</li>
+<li>manages many simple cases <strong>at the same time</strong></li>
+<li><strong>answers instantly</strong> - your clients won’t wait anymore!</li>
+</ul>
+
+<h2 id="how-does-the-chat-io-integration-work">How does the chat.io integration work</h2>
+
+<ul>
+<li>When the bot isn&rsquo;t able to answer questions, you can <a href="../bot-responses/how-to-use-transfer-to-livechat-action.html">set the chat transfer to human agents</a>.</li>
+<li>Use rich messages in bot responses. See the list of compatible integrations <a href="../bot-responses/responses-with-integrations.html">here</a>.</li>
+<li>Returning customers are always assigned to available human agents.</li>
+<li>Human agents can step in and join and take over chats handled by the bot.</li>
+</ul>
+
+<h2 id="how-to-integrate-your-bot-with-chat-io">How to integrate your bot with chat.io</h2>
+
+<ol>
+<li>First, you need the chat.io account. If you haven’t created one, go to <a href="https://www.chat.io/">https://www.chat.io/</a> and set up your new account. Also, you can find there extensive documentation and guidebooks to get started with the app.
+<img src="../../images/help/__integrations-chatio-1.png" alt="" /></li>
+<li>When your account is ready, return to your <a href="https://accounts.botengine.ai/">BotEngine account</a>. Note, that you can also create a new BotEngine account using your chat.io details.
+<img src="../../images/help/__integrations-chatio-5.png" alt="" /></li>
+<li>Decide the story that you want to integrate with your chat.io account. You can either create a new one or integrate an existing scenario.</li>
+<li>Go to the <strong>integrations</strong> section and select <strong>chat.io</strong>.
+<img src="../../images/help/__integrations-chatio-2.png" alt="" /></li>
+<li>Log in to your chat.io account.
+<img src="../../images/help/__integrations-chatio-3.png" alt="" /></li>
+<li>Select the story and click <strong>Create bot</strong>.
+<img src="../../images/help/__integrations-chatio-4.png" alt="" /></li>
+<li>Now you can configure and customize your bot.
+<img src="../../images/help/__integrations-chatio-6.png" alt="" />
+
+<ul>
+<li><strong>Routing priority</strong> - decide which chats go to the bot and which are directed to your human agents. The bot can take all incoming chats, work only when your agents are offline or become one of them.</li>
+<li><strong>Bot agent name</strong> - name your bot</li>
+<li><strong>Set the bot avatar</strong> - paste an avatar URL to give your bot a unique look.</li>
+</ul></li>
+<li>Click <strong>Confirm</strong> to create the bot.
+<img src="../../images/help/__integrations-chatio-7.png" alt="" /></li>
+<li>You have successfully integrated your story with chat.io. Remember that you can always <strong>use the toggle</strong> to enable and disable the bot agent or completely remove the integration.</li>
+</ol>
+
+<blockquote class="__info">
+    <p>
+        To view all the your bot agent’s chats, go to <strong>assigned to others</strong> section in Chats and in Archives.
+    </p>
+</blockquote>
+
+<h2 id="how-to-use-the-chat-io-integration">How to use the chat.io integration</h2>
+
+<p>To see your bot’s ongoing chats, go to the <strong>assigned to others</strong> section.
+<img src="../../images/help/__integrations-using-chatio-1.png" alt="" />
+Send a <strong>public reply</strong> to join your bot’s ongoing chat. You can leave <strong>private notes</strong>, that are invisible to the client and don’t mute the bot. <strong>Use the toggle</strong> located in the upper right corner to manually disable and enable the bot in this chat.
+<img src="../../images/help/__integrations-using-chatio-2.png" alt="" />
+You can view the performance of your bot in the <strong>archives</strong>. Search all chats by the bot’s name, label or use filters to narrow the results.
+<img src="../../images/help/__integrations-using-chatio-5.png" alt="" /></p>
+
+            
+            <p class="__navigation">
+                <a href="slack-integration/index.html"><span>Go to next article</span> <i class="material-icons">arrow_forward</i></a>
+            </p>
+            
+        </article>
+    </div>
+</section>
+
+
+        <footer>
+    <div class="container">
+        <div class="paragraph">
+            <nav>
+                <p>Product</p>
+                <ul class="Footer__menu">
+                    <li class="active"><a href="../../index.html">Home</a></li>
+                    <li><a href="../../features.html">Features</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Integrations</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../integrations/livechat.html">LiveChat</a></li>
+                    <li><a href="../../integrations/chat-widget.html">Chat widget</a></li>
+                    <li><a href="../../integrations/slack.html">Slack</a></li>
+                    <li><a href="facebook-messenger-bot/index.html" target="_blank">Messenger</a></li>
+                    <li><a href="chatio-bot/index.html" target="_blank">Chat.io</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Support</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../help.html">Help center</a></li>
+                    <li><a href="../../experts.html">Experts marketplace</a></li>
+                    <li><a href="../../docs.html">Docs</a></li>
+                    <li><a href="https://www.facebook.com/groups/295034011008221/" target="_blank">Community group</a></li>
+                </ul>
+            </nav>
+            <img src="../../images/logo_min.svg" alt="BotEngine.ai" />
+        </div>
+        <div class="paragraph">
+            <a href="https://www.facebook.com/BotEngineAI" target="_blank"><i class="__fb"></i></a>
+            <a href="https://twitter.com/BotEngineAI" target="_blank"><i class="__twitter"></i></a>
+            <a href="https://www.producthunt.com/posts/botengine" target="_blank"><i class="__product_hunt"></i></a>
+        </div>
+        <div class="paragraph">
+            <ul class="Footer__menu_inline">
+                <li><a href="../../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="Footer__copyright">
+                Copyright © 2018 LiveChat, Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NQCSXSR');
+    </script>
+    <script src="../../js/appfe3a.js?4f02ec71cf9457bd48ed4a1c69a08263188139fd"></script>
+</body>
+
+<!-- Mirrored from www.botengine.ai/help/integrations/chatio-bot by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:25:40 GMT -->
+</html>

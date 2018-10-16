@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.botengine.ai/help/attributes/how-to-use-attributes by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:33:28 GMT -->
+<head>
+    
+    <title>How to use Attributes</title>
+    
+    
+    <meta name="description" content="Attributes save information about the ongoing conversation and help to reuse them in the chat.">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/app45f6.css?7120e865dd4069f7e974740471547771e70d6624">
+    <link rel="icon" href="../../assets/images/favicon.html">
+    <link rel="shortcuts icon" type="image/x-icon" href="../../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <meta name="slack-app-id" content="A7FTEHPEG">
+    <meta name="twitter:site" content="@botengineai" />
+    <meta name="twitter:creator" content="@botengineai" />
+    <meta property="og:url" content="how-to-use-attributes/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How to use Attributes" />
+    <meta property="og:description" content="Attributes save information about the ongoing conversation and help to reuse them in the chat." />
+    <meta property="og:image" content="https://cdn.botengine.ai/website/og_image.png" />
+</head>
+<body>
+    
+    <div id="be"class="help__article">
+        <header>
+    <nav class="Nav theme">
+        <div class="container">
+            <a href="../../index.html" class="Nav__logo __small">
+                <img src="../../images/__nav_logo_mini.svg" alt="BotEngine.ai" />
+            </a>
+
+            <i class="material-icons Nav__menu_icon">menu</i>
+            
+            <a href="../../help.html" class="Nav__section_name"><span>Help Center</span></a>
+            
+            <a class="Nav__button" href="https://app.botengine.ai/">
+                <button class="default __theme_transparent_blue __theme_transparent" target="_blank">Login</button>
+            </a>
+            
+        </div>
+    </nav>
+</header>
+
+        
+
+
+
+
+
+<header class="Nav__header __violet_2">
+    <div class="wrapper"></div>
+</header>
+
+<section class="content">
+    <div class="container">
+        <nav class="__breadcrumbs">
+            <a href="../index.html"><span>Help</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <a href="index.html"><span>Attributes</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <p href="#">How to use Attributes</p>
+        </nav>
+    </div>
+
+    
+
+    <div class="container __small">
+        <nav id="help__article_nav" class="help__nav">
+            <p>Attributes</p>
+            <ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="what-are-attributes/index.html">What are Attributes</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="active">
+                    <a href="how-to-use-attributes/index.html">How to use Attributes</a>
+                    
+                        
+
+    <ul>
+    
+        
+        
+        
+        
+        <li id="nav-system-attributes">
+            <a href="#system-attributes">System Attributes</a>
+        </li>
+    
+        
+        
+        
+        
+        <li id="nav-user-attributes">
+            <a href="#user-attributes">User attributes</a>
+        </li>
+    
+        
+        
+        
+        
+        <li id="nav-use-ask-the-question-action-to-get-attributes">
+            <a href="#use-ask-the-question-action-to-get-attributes">Use Ask the Question action to get attributes</a>
+        </li>
+    
+        
+        
+        
+        
+        <li id="nav-how-to-fill-attributes">
+            <a href="#how-to-fill-attributes">How to fill Attributes</a>
+        </li>
+    
+    </ul>
+
+
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="attributes-and-integrations/index.html">Use Attributes with Integrations</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="list-of-default-attributes/index.html">The list of Attributes</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+        </nav>
+
+        
+<div class="share-buttons">
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.botengine.ai%2fhelp%2fattributes%2fhow-to-use-attributes%2f" target="_blank">
+       <i class="__fb"></i>
+   </a>
+
+   <a href="https://twitter.com/intent/tweet/?text=How%20to%20use%20Attributes&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2fattributes%2fhow-to-use-attributes%2f&amp;via=botengine.ai" target="_blank">
+       <i class="__twitter"></i>
+   </a>
+
+   <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2fattributes%2fhow-to-use-attributes%2f&amp;title=How%20to%20use%20Attributes&amp;summary=How%20to%20use%20Attributes&amp;source=https%3a%2f%2fwww.botengine.ai%2fhelp%2fattributes%2fhow-to-use-attributes%2f" target="_blank">
+       <i class="__linkedin"></i>
+   </a>
+</div>
+
+
+        <article>
+            <span class="title">How to use Attributes</span>
+            <div class="__authors">
+    <div class="__images">
+        
+            <img src="../../images/help/authors/luiza-jurczyk.png" class="__no-scale" alt="BotEngine.ai" />
+        
+    </div>
+
+    <div class="__description">
+        <div class="title">
+            
+                <p class="author">luiza jurczyk</p>
+            
+        </div>
+
+        <p>Last update: <data>
+  
+
+<time>31st of Jul 2018</time>
+</data></p>
+    </div>
+</div>
+
+            
+
+<h3 id="attributes-save-information-about-the-ongoing-conversation-and-help-to-reuse-them-in-the-chat">Attributes save information about the ongoing conversation and help to reuse them in the chat.</h3>
+
+<h2 id="system-attributes">System Attributes</h2>
+
+<p>BotEngine automatically collects data about your users from integrated apps. Let’s use one of them to create a nice personalized Welcome Interaction. The following example uses the <a href="../integrations/facebook-messenger-bot.html">Facebook Messenger integration</a>.</p>
+
+<blockquote class="__info">
+    <p>
+        Check out <a href="list-of-default-attributes.html" target="_blank">the list of default attributes</a>.
+    </p>
+</blockquote>
+
+<ol>
+<li>Create a new story and add an interaction.</li>
+<li>Go to <code>bot responses</code>, add <code>text</code> and inside your response type double curly brackets to call the attributes <code><span class="brackets">&hellip;</span></code>. Keep <code>Default and user attributes</code> selected.
+<img src="../../images/help/__attributes_system-2.png" alt="" /></li>
+<li>Find Facebook integration and select <code>User name</code>.
+<img src="../../images/help/__attributes-how-to-use-attributes-1.png" alt="" /></li>
+<li>Add some text and save the interaction.
+<img src="../../images/help/__attributes-how-to-use-attributes-2.png" alt="" /></li>
+<li>The attribute is ready. The bot will pull the information from Messenger and display the user name in the place of the attribute.</li>
+</ol>
+
+<h2 id="user-attributes">User attributes</h2>
+
+<p>User attributes allow you to store any value you want. To get the data you can use system or user entities. In the following example, we’ll be saving email address using the emai system entity.</p>
+
+<ol>
+<li>Create a new story and add an interaction. Name it `Get email</li>
+<li>ą2. Add the <code>sys.email</code> entity to the user says section. To do so, type two curly brackets and select <code>.sys.email</code> and name your attribute.
+FInd out more about this entity <a href="../system-entities/sys-email.html">here</a>.
+<img src="../../images/help/__attributes_user-1.png" alt="" /></li>
+<li>Add a few similar user says together with the entity.
+<img src="../../images/help/__attributes_user-3.png" alt="" /></li>
+<li>Go to the bot responses section and add a new <code>text</code> response. Type again double curly brackets to view available attributes and select the one we&rsquo;ve just created called <code>user_email</code>.
+<img src="../../images/help/__attributes_user-4.png" alt="" /></li>
+<li>Save your work. Your attribute is set and ready.</li>
+</ol>
+
+<blockquote class="__info">
+    <p>
+        You can pass the value of your attributes by webhooks. You'll find it in the <code>JSON</code> assigned to the<code>parameter</code>.
+    </p>
+</blockquote>
+
+<h2 id="use-ask-the-question-action-to-get-attributes">Use Ask the Question action to get attributes</h2>
+
+<p>You can prompt users to fill the attributes using the <strong>Ask a Question</strong> action.   Ask a Question offers a variety of options, that can be used to gain new leads, collect orders and much more.</p>
+
+<ol>
+<li>In the Interaction view, select <strong>Bot responses</strong>. Here you’ll find the <strong>Ask a Question</strong> action.
+<img src="../../images/help/__bot_responses__ask_a_question-1.png" alt="" /></li>
+<li>Configure the action. If you need help, please refer to <a href="../bot-responses/ask-a-question.html">this</a> article.
+<img src="../../images/help/__bot_responses__ask_a_question-general.png" alt="" /></li>
+<li>Now you can reuse the value entered by users in your story. Type two curly brackets <code><span class="brackets">&hellip;</span></code>. The system will automatically show you available attributes.
+<img src="../../images/help/__bot_responses__ask_a_question-9.png" alt="" /></li>
+<li>Now save the interaction. When this bot response is triggered, the bot will display the value entered by the user.</li>
+</ol>
+
+<blockquote>
+<p>You can also pass the attribute values by other bot responses, such as <a href="../bot-responses/how-to-use-quick-replies.html">quick replies</a>, <a href="../bot-responses/how-to-use-cards.html">cards</a> and <a href="../bot-responses/how-to-use-buttons.html">buttons</a> and with <a href="../webhooks/what-are-webhooks.html">webhooks</a>.</p>
+</blockquote>
+
+<h2 id="how-to-fill-attributes">How to fill Attributes</h2>
+
+<p>It’s possible to send any parameters during the ongoing conversation. They can substitute already existing parameters or create a new one that can be used at the specific scenario stage.</p>
+
+<blockquote>
+<p>Parameters can be sent either in endpoint <code>/query</code> or as an answer for incoming webhook. Attributes are used as metadata in archives.</p>
+</blockquote>
+
+            
+            <p class="__navigation">
+                <a href="attributes-and-integrations/index.html"><span>Go to next article</span> <i class="material-icons">arrow_forward</i></a>
+            </p>
+            
+        </article>
+    </div>
+</section>
+
+
+        <footer>
+    <div class="container">
+        <div class="paragraph">
+            <nav>
+                <p>Product</p>
+                <ul class="Footer__menu">
+                    <li class="active"><a href="../../index.html">Home</a></li>
+                    <li><a href="../../features.html">Features</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Integrations</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../integrations/livechat.html">LiveChat</a></li>
+                    <li><a href="../../integrations/chat-widget.html">Chat widget</a></li>
+                    <li><a href="../../integrations/slack.html">Slack</a></li>
+                    <li><a href="../integrations/facebook-messenger-bot/index.html" target="_blank">Messenger</a></li>
+                    <li><a href="../integrations/chatio-bot/index.html" target="_blank">Chat.io</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Support</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../help.html">Help center</a></li>
+                    <li><a href="../../experts.html">Experts marketplace</a></li>
+                    <li><a href="../../docs.html">Docs</a></li>
+                    <li><a href="https://www.facebook.com/groups/295034011008221/" target="_blank">Community group</a></li>
+                </ul>
+            </nav>
+            <img src="../../images/logo_min.svg" alt="BotEngine.ai" />
+        </div>
+        <div class="paragraph">
+            <a href="https://www.facebook.com/BotEngineAI" target="_blank"><i class="__fb"></i></a>
+            <a href="https://twitter.com/BotEngineAI" target="_blank"><i class="__twitter"></i></a>
+            <a href="https://www.producthunt.com/posts/botengine" target="_blank"><i class="__product_hunt"></i></a>
+        </div>
+        <div class="paragraph">
+            <ul class="Footer__menu_inline">
+                <li><a href="../../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="Footer__copyright">
+                Copyright © 2018 LiveChat, Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NQCSXSR');
+    </script>
+    <script src="../../js/app7b80.js?c38218445c12d082717c9578d25adf233ccb7a12"></script>
+</body>
+
+<!-- Mirrored from www.botengine.ai/help/attributes/how-to-use-attributes by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:33:40 GMT -->
+</html>

@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.botengine.ai/docs/stories by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:28:58 GMT -->
+<head>
+    
+    <title>Stories | BotEngine AI API</title>
+    
+    
+    <meta name="description" content="Manage your bot stories using REST API.">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/appe8af.css?69a9ae71336d9ba3553f6f751660d9bc4ba342e4">
+    <link rel="icon" href="../assets/images/favicon.html">
+    <link rel="shortcuts icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <meta name="slack-app-id" content="A7FTEHPEG">
+    <meta name="twitter:site" content="@botengineai" />
+    <meta name="twitter:creator" content="@botengineai" />
+    <meta property="og:url" content="stories/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Stories | BotEngine AI API" />
+    <meta property="og:description" content="Manage your bot stories using REST API." />
+    <meta property="og:image" content="https://cdn.botengine.ai/website/og_image.png" />
+</head>
+<body>
+    
+    <div id="be"class="docs">
+        <header>
+    <nav class="Nav theme">
+        <div class="container">
+            <a href="../index.html" class="Nav__logo __small">
+                <img src="../images/__nav_logo_mini.svg" alt="BotEngine.ai" />
+            </a>
+
+            <i class="material-icons Nav__menu_icon">menu</i>
+            
+            <a href="../docs.html" class="Nav__section_name"><span>Docs</span></a>
+            
+            <a class="Nav__button" href="https://app.botengine.ai/">
+                <button class="default __theme_transparent_blue __theme_transparent" target="_blank">Login</button>
+            </a>
+            
+            <div class="Nav__theme_switch">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+        </div>
+    </nav>
+</header>
+
+        
+    <header class="Nav__header">
+        <div class="container __small">
+            <div class="wrapper">
+                <h1>Build your bot using BotEngine API</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="docs__container">
+        <div class="container">
+            <nav id="docs__nav" class="docs__nav">
+    <ul>
+        
+        
+        
+        
+
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-introduction" >
+                <a href="introduction.html">Introduction</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-basic-api-usage"><a href="#basic-api-usage">Basic API usage</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-authentication"><a href="#authentication">Authentication</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-authentication-example"><a href="#authentication-example">Authentication example</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-error-handling"><a href="#error-handling">Error handling</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+                                <ul>
+                            
+
+                            
+
+                            
+                                </li>
+                            
+                        
+                        <li id="nav-http-status-codes-summary"><a href="#http-status-codes-summary">HTTP status codes summary</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+                                </ul>
+                            
+
+                            
+                        
+                        <li id="nav-data-format"><a href="#data-format">Data format</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-stories" class="active">
+                <a href="stories.html">Stories</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-list-all-stories"><a href="#list-all-stories">List all stories</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-a-single-story"><a href="#get-a-single-story">Get a single story</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-add-a-new-story"><a href="#add-a-new-story">Add a new story</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-a-story"><a href="#update-a-story">Update a story</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-delete-a-story"><a href="#delete-a-story">Delete a story</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-interactions" >
+                <a href="interactions.html">Interactions</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-list-all-story-interactions"><a href="#list-all-story-interactions">List all story interactions</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-a-single-interaction"><a href="#get-a-single-interaction">Get a single interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-add-a-root-interaction"><a href="#add-a-root-interaction">Add a root interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-add-a-child-interaction"><a href="#add-a-child-interaction">Add a child interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-a-interaction"><a href="#update-a-interaction">Update a interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-delete-a-interaction"><a href="#delete-a-interaction">Delete a interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-common-object-definitions"><a href="#common-object-definitions">Common object definitions</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-default-interactions" >
+                <a href="default-interactions.html">Default interactions</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-get-welcome-interaction"><a href="#get-welcome-interaction">Get Welcome Interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-welcome-interaction"><a href="#update-welcome-interaction">Update Welcome Interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-fallback-interaction"><a href="#get-fallback-interaction">Get Fallback Interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-fallback-interaction"><a href="#update-fallback-interaction">Update Fallback Interaction</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-common-object-definitions"><a href="#common-object-definitions">Common object definitions</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-user-entities" >
+                <a href="user-entities.html">User entities</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-list-all-user-entities"><a href="#list-all-user-entities">List all user entities</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-single-entity"><a href="#get-single-entity">Get single entity</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-add-new-entity"><a href="#add-new-entity">Add new entity</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-entity"><a href="#update-entity">Update entity</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-delete-entity"><a href="#delete-entity">Delete entity</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-common-object-definitions"><a href="#common-object-definitions">Common object definitions</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-talk-with-bot" >
+                <a href="talk-with-bot.html">Talk with bot</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-send-a-message"><a href="#send-a-message">Send a message</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-trigger-welcome-interaction"><a href="#trigger-welcome-interaction">Trigger welcome interaction</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-webhooks" >
+                <a href="webhooks.html">Webhooks</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-list-all-webhooks"><a href="#list-all-webhooks">List all Webhooks</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-a-specific-webhook"><a href="#get-a-specific-webhook">Get a specific webhook</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-create-a-webhook"><a href="#create-a-webhook">Create a webhook</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-update-a-webhook"><a href="#update-a-webhook">Update a webhook</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-delete-a-webhook"><a href="#delete-a-webhook">Delete a webhook</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-common-object-definitions"><a href="#common-object-definitions">Common object definitions</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-archives" >
+                <a href="archives.html">Archives</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-get-list-of-chats"><a href="#get-list-of-chats">Get list of chats</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-get-single-chat"><a href="#get-single-chat">Get single chat</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-object-definitions" >
+                <a href="object-definitions.html">Object definitions</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-responses"><a href="#responses">responses</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+                                <ul>
+                            
+
+                            
+
+                            
+                                </li>
+                            
+                        
+                        <li id="nav-text-response"><a href="#text-response">Text response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-image-response"><a href="#image-response">Image response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-quick-replies"><a href="#quick-replies">Quick replies</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-card-response"><a href="#card-response">Card response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-cards-response"><a href="#cards-response">Cards response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-button-response"><a href="#button-response">Button response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-end-response"><a href="#end-response">End response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-webhook-response"><a href="#webhook-response">Webhook response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-go-to-response"><a href="#go-to-response">Go to response</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+                                </ul>
+                            
+
+                            
+                        
+                        <li id="nav-fulfillment"><a href="#fulfillment">fulfillment</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-filters"><a href="#filters">filters</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+                                <ul>
+                            
+
+                            
+
+                            
+                                </li>
+                            
+                        
+                        <li id="nav-attribute-filter"><a href="#attribute-filter">Attribute filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-lifespan-filter"><a href="#lifespan-filter">Lifespan filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-score-filter"><a href="#score-filter">Score filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-incomplete-filter"><a href="#incomplete-filter">Incomplete filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-resolvedquery-filter"><a href="#resolvedquery-filter">ResolvedQuery filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-trigger-filter"><a href="#trigger-filter">Trigger filter</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+                                </ul>
+                            
+
+                            
+                        
+                        <li id="nav-rules"><a href="#rules">rules</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+                                <ul>
+                            
+
+                            
+
+                            
+                                </li>
+                            
+                        
+                        <li id="nav-is-rule"><a href="#is-rule">Is rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-is-not-rule"><a href="#is-not-rule">Is not rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-empty-rule"><a href="#empty-rule">Empty rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-contains-rule"><a href="#contains-rule">Contains rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-not-contains-rule"><a href="#not-contains-rule">Not contains rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-greater-rule"><a href="#greater-rule">Greater rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-less-rule"><a href="#less-rule">Less rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-greater-or-equal-rule"><a href="#greater-or-equal-rule">Greater or equal rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-less-or-equal-rule"><a href="#less-or-equal-rule">Less or equal rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-longer-rule"><a href="#longer-rule">Longer rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+
+                            
+                        
+                        <li id="nav-shorter-rule"><a href="#shorter-rule">Shorter rule</a>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                            
+
+                            
+                                </ul>
+                            
+
+                            
+                        
+                        <li id="nav-result"><a href="#result">result</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+
+            
+
+            <li id="nav-samples" >
+                <a href="samples.html">Samples</a>
+                
+                
+                    <ul>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        
+                        <li id="nav-webhook-integration-examples"><a href="#webhook-integration-examples">Webhook integration examples</a>
+                    
+                    </ul>
+                
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </ul>
+</nav>
+
+            <div class="docs__main">
+                
+        		<article>
+                    
+                        
+
+<h1 id="stories">Stories</h1>
+
+<p>A story is a conversation scenario between customers and the bot. You can design the bot to do things like receiving pizza orders or scheduling doctor appointments or whatever you want.</p>
+
+<p><img src="../images/help/__stories_story-1.png" alt="" /></p>
+
+<h2 id="list-all-stories">List all stories</h2>
+
+<p>Returns list of all stories.</p>
+
+<p><endpoint method="GET" url="https://api.botengine.ai/stories"></endpoint></p>
+
+<p><strong>Request URL</strong></p>
+
+<p><snippet method="GET" authorization="private" url="https://api.botengine.ai/stories"></snippet></p>
+
+<p><strong>Response example</strong></p>
+
+<p><json>
+[
+    {
+        &ldquo;id&rdquo;: &ldquo;58ee11d75fb5580005cb8199&rdquo;,
+        &ldquo;name&rdquo;: &ldquo;Example name&rdquo;,
+        &ldquo;description&rdquo;: &ldquo;Example description&rdquo;,
+        &ldquo;integrations&rdquo;: [],
+        &ldquo;metrics&rdquo;: [
+            {
+                date: &ldquo;2018-01-16&rdquo;,
+                conversations: 15
+            },
+            [&hellip;]
+        ]
+    }
+]
+</json></p>
+
+<h4 id="properties">Properties</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>String</td>
+<td>Story id.</td>
+</tr>
+
+<tr>
+<td><code>name</code></td>
+<td>String</td>
+<td>Story name.</td>
+</tr>
+
+<tr>
+<td><code>description</code></td>
+<td>String</td>
+<td>Story description.</td>
+</tr>
+
+<tr>
+<td><a href="#integrations"><code>integrations</code></a></td>
+<td>Array.&lt;<a href="#integrations">String</a>&gt;</td>
+<td>An array of <a href="#integrations">element</a> strings that describes which integrations story is connected with.</td>
+</tr>
+
+<tr>
+<td><a href="#metrics"><code>metrics</code></a></td>
+<td>Array.&lt;<a href="#metrics">object</a>&gt;</td>
+<td>An array of <a href="#metrics">element</a> objects that includes weekly metrics for the story.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="integrations"><code>integrations</code></h4>
+
+<p>A string array that describes which integrations story is connected with. Possible values: <code>livechat</code>, <code>messenger</code>, <code>slack</code>, <code>widget</code>.</p>
+
+<h4 id="metrics"><code>metrics</code></h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>date</code></td>
+<td>String</td>
+<td>Day.</td>
+</tr>
+
+<tr>
+<td><code>conversations</code></td>
+<td>Number</td>
+<td>The number of conversations.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="get-a-single-story">Get a single story</h2>
+
+<p>Returns single story for the given id.</p>
+
+<p><endpoint method="GET" url="https://api.botengine.ai/stories/:ID"></endpoint></p>
+
+<p><strong>Request URL</strong></p>
+
+<p><snippet method="GET" authorization="private" url="https://api.botengine.ai/stories/:ID"></snippet></p>
+
+<p><strong>Response Example</strong></p>
+
+<p><json>
+{
+    &ldquo;id&rdquo;: &ldquo;58ee11d75fb5580005cb8199&rdquo;,
+    &ldquo;name&rdquo;: &ldquo;Example story name&rdquo;,
+    &ldquo;description&rdquo;: &ldquo;Example story description&rdquo;,
+    &ldquo;order&rdquo;: [
+        &ldquo;58ee2d045d033800059a3f7e&rdquo;
+    ],
+    &ldquo;interactions&rdquo;: {
+        &ldquo;58ee2d045d033800059a3f7e&rdquo;: {
+            &ldquo;name&rdquo;: &ldquo;parent&rdquo;,
+            &ldquo;root&rdquo;: true,
+            &ldquo;references&rdquo;: [],
+            &ldquo;contextOut&rdquo;: [
+                &ldquo;58ee2d105fb5580005cb81aa&rdquo;
+            ],
+            &ldquo;webhook&rdquo;: &ldquo;&rdquo;,
+            &ldquo;id&rdquo;: &ldquo;58ee2d045d033800059a3f7e&rdquo;
+        },
+        &ldquo;58ee2d105fb5580005cb81aa&rdquo;: {
+            &ldquo;name&rdquo;: &ldquo;child&rdquo;,
+            &ldquo;root&rdquo;: false,
+            &ldquo;references&rdquo;: [],
+            &ldquo;contextOut&rdquo;: [],
+            &ldquo;webhook&rdquo;: &ldquo;&rdquo;,
+            &ldquo;id&rdquo;: &ldquo;58ee2d105fb5580005cb81aa&rdquo;
+        }
+    }
+}
+</json></p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>String</td>
+<td>Story id.</td>
+</tr>
+
+<tr>
+<td><code>name</code></td>
+<td>String</td>
+<td>Story name.</td>
+</tr>
+
+<tr>
+<td><code>description</code></td>
+<td>String</td>
+<td>Story description.</td>
+</tr>
+
+<tr>
+<td><code>order</code></td>
+<td>Array.&lt;String&gt;</td>
+<td>A string array that states the interactions order at the first story tree level. This order is considered while searching and matching interactions.</td>
+</tr>
+
+<tr>
+<td><code>interactions</code></td>
+<td>Object</td>
+<td>An object includes all interactions created in the story.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="add-a-new-story">Add a new story</h2>
+
+<p>Create a new story:</p>
+
+<p><endpoint method="POST" url="https://api.botengine.ai/stories"></endpoint></p>
+
+<p><strong>Request URL</strong></p>
+
+<p><snippet method="GET" authorization="private" url="https://api.botengine.ai/stories/:ID">
+    {
+      &ldquo;name&rdquo;: &ldquo;Story name&rdquo;,
+      &ldquo;description&rdquo;: &ldquo;Story description&rdquo;
+    }
+</snippet></p>
+
+<p><strong>Response example</strong></p>
+
+<p><json>
+{
+    &ldquo;id&rdquo;: &ldquo;58ee2e085d033800059a3f7f&rdquo;,
+    &ldquo;timestamp&rdquo;: &ldquo;2017-04-12T13:39:20.721Z&rdquo;,
+    &ldquo;status&rdquo;: {
+        &ldquo;code&rdquo;: 200,
+        &ldquo;type&rdquo;: &ldquo;success&rdquo;
+    }
+}
+</json></p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>String</td>
+<td>Story name. <br/><br/><code>String(1, 1024)</code></td>
+</tr>
+
+<tr>
+<td><code>description</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Story description. <br/><br/><code>String(0, 2048)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="update-a-story">Update a story</h2>
+
+<p>Update story with the given id.</p>
+
+<p><endpoint method="PUT" url="https://api.botengine.ai/stories/:ID"></endpoint></p>
+
+<p><strong>Request URL</strong></p>
+
+<p><snippet method="PUT" authorization="private" url="https://api.botengine.ai/stories/:ID">
+    {
+      &ldquo;name&rdquo;: &ldquo;Story name&rdquo;,
+      &ldquo;description&rdquo;: &ldquo;Story description&rdquo;
+    }
+</snippet></p>
+
+<p><strong>Response Example</strong></p>
+
+<p><json>
+{
+    &ldquo;timestamp&rdquo;: &ldquo;2017-04-12T13:40:40.260Z&rdquo;,
+    &ldquo;status&rdquo;: {
+        &ldquo;code&rdquo;: 200,
+        &ldquo;type&rdquo;: &ldquo;success&rdquo;
+    }
+}
+</json></p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>String</td>
+<td>Story name. <br/><br/><code>String(1, 1024)</code></td>
+</tr>
+
+<tr>
+<td><code>description</code></td>
+<td>String</td>
+<td><strong>Optional.</strong> Story description. <br/><br/><code>String(0, 2048)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="delete-a-story">Delete a story</h2>
+
+<p>Removes a story with the given id.</p>
+
+<p><endpoint method="DELETE" url="https://api.botengine.ai/stories/:ID"></endpoint></p>
+
+<p><strong>Request URL</strong></p>
+
+<p><snippet method="DELETE" authorization="private" url="https://api.botengine.ai/stories/:ID"></snippet></p>
+
+<p><strong>Response Example</strong></p>
+
+<p><json>
+{
+    &ldquo;timestamp&rdquo;: &ldquo;2017-04-12T13:41:47.020Z&rdquo;,
+    &ldquo;status&rdquo;: {
+        &ldquo;code&rdquo;: 200,
+        &ldquo;type&rdquo;: &ldquo;success&rdquo;
+    }
+}
+</json></p>
+
+                    
+        		</article>
+            </div>
+        </div>
+    </section>
+
+    <div class="docs__menu_toggle">
+        <i class="material-icons">menu</i>
+    </div>
+
+        <footer>
+    <div class="container">
+        <div class="paragraph">
+            <nav>
+                <p>Product</p>
+                <ul class="Footer__menu">
+                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li><a href="../features.html">Features</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Integrations</p>
+                <ul class="Footer__menu">
+                    <li><a href="../integrations/livechat.html">LiveChat</a></li>
+                    <li><a href="../integrations/chat-widget.html">Chat widget</a></li>
+                    <li><a href="../integrations/slack.html">Slack</a></li>
+                    <li><a href="../help/integrations/facebook-messenger-bot/index.html" target="_blank">Messenger</a></li>
+                    <li><a href="../help/integrations/chatio-bot/index.html" target="_blank">Chat.io</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Support</p>
+                <ul class="Footer__menu">
+                    <li><a href="../help.html">Help center</a></li>
+                    <li><a href="../experts.html">Experts marketplace</a></li>
+                    <li><a href="../docs.html">Docs</a></li>
+                    <li><a href="https://www.facebook.com/groups/295034011008221/" target="_blank">Community group</a></li>
+                </ul>
+            </nav>
+            <img src="../images/logo_min.svg" alt="BotEngine.ai" />
+        </div>
+        <div class="paragraph">
+            <a href="https://www.facebook.com/BotEngineAI" target="_blank"><i class="__fb"></i></a>
+            <a href="https://twitter.com/BotEngineAI" target="_blank"><i class="__twitter"></i></a>
+            <a href="https://www.producthunt.com/posts/botengine" target="_blank"><i class="__product_hunt"></i></a>
+        </div>
+        <div class="paragraph">
+            <ul class="Footer__menu_inline">
+                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="Footer__copyright">
+                Copyright © 2018 LiveChat, Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NQCSXSR');
+    </script>
+    <script src="../js/appd781.js?748c8f004782488f6d6d4c0c816bbdf99e467564"></script>
+</body>
+
+<!-- Mirrored from www.botengine.ai/docs/stories by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:29:02 GMT -->
+</html>

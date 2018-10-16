@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.botengine.ai/help/interactions/interaction-dependencies by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:31:53 GMT -->
+<head>
+    
+    <title>Interaction dependencies</title>
+    
+    
+    <meta name="description" content="Understand the dependencies between interactions to provide better conversation flow.">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/app1f6e.css?9fd905d2de7a915324a86690e26232f8e15dac50">
+    <link rel="icon" href="../../assets/images/favicon.html">
+    <link rel="shortcuts icon" type="image/x-icon" href="../../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <meta name="slack-app-id" content="A7FTEHPEG">
+    <meta name="twitter:site" content="@botengineai" />
+    <meta name="twitter:creator" content="@botengineai" />
+    <meta property="og:url" content="interaction-dependencies/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Interaction dependencies" />
+    <meta property="og:description" content="Understand the dependencies between interactions to provide better conversation flow." />
+    <meta property="og:image" content="https://cdn.botengine.ai/website/og_image.png" />
+</head>
+<body>
+    
+    <div id="be"class="help__article">
+        <header>
+    <nav class="Nav theme">
+        <div class="container">
+            <a href="../../index.html" class="Nav__logo __small">
+                <img src="../../images/__nav_logo_mini.svg" alt="BotEngine.ai" />
+            </a>
+
+            <i class="material-icons Nav__menu_icon">menu</i>
+            
+            <a href="../../help.html" class="Nav__section_name"><span>Help Center</span></a>
+            
+            <a class="Nav__button" href="https://app.botengine.ai/">
+                <button class="default __theme_transparent_blue __theme_transparent" target="_blank">Login</button>
+            </a>
+            
+        </div>
+    </nav>
+</header>
+
+        
+
+
+
+
+
+<header class="Nav__header __violet_2">
+    <div class="wrapper"></div>
+</header>
+
+<section class="content">
+    <div class="container">
+        <nav class="__breadcrumbs">
+            <a href="../index.html"><span>Help</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <a href="index.html"><span>Interactions</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <p href="#">Interaction dependencies</p>
+        </nav>
+    </div>
+
+    
+
+    <div class="container __small">
+        <nav id="help__article_nav" class="help__nav">
+            <p>Interactions</p>
+            <ul>
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="first-steps-with-interactions/index.html">First steps with interactions</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="what-is-welcome-interaction/index.html">Welcome Interaction</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="what-is-fallback-interaction/index.html">Fallback Interaction</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="context-fallback/index.html">Context Fallback</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="active">
+                    <a href="interaction-dependencies/index.html">Interaction dependencies</a>
+                    
+                        
+
+    <ul>
+    
+        
+        
+        
+        
+        <li id="nav-dependency-rules">
+            <a href="#dependency-rules">Dependency Rules</a>
+        </li>
+    
+    </ul>
+
+
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="how-to-use-filters-in-bot-responses/index.html">Filters</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="cloning-interactions/index.html">Clone interactions</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li >
+                    <a href="set-up-delay-for-responses/index.html">Set a delay for bot responses</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+        </nav>
+
+        
+<div class="share-buttons">
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.botengine.ai%2fhelp%2finteractions%2finteraction-dependencies%2f" target="_blank">
+       <i class="__fb"></i>
+   </a>
+
+   <a href="https://twitter.com/intent/tweet/?text=Interaction%20dependencies&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2finteractions%2finteraction-dependencies%2f&amp;via=botengine.ai" target="_blank">
+       <i class="__twitter"></i>
+   </a>
+
+   <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2finteractions%2finteraction-dependencies%2f&amp;title=Interaction%20dependencies&amp;summary=Interaction%20dependencies&amp;source=https%3a%2f%2fwww.botengine.ai%2fhelp%2finteractions%2finteraction-dependencies%2f" target="_blank">
+       <i class="__linkedin"></i>
+   </a>
+</div>
+
+
+        <article>
+            <span class="title">Interaction dependencies</span>
+            <div class="__authors">
+    <div class="__images">
+        
+            <img src="../../images/help/authors/luiza-jurczyk.png" class="__no-scale" alt="BotEngine.ai" />
+        
+    </div>
+
+    <div class="__description">
+        <div class="title">
+            
+                <p class="author">luiza jurczyk</p>
+            
+        </div>
+
+        <p>Last update: <data>
+  
+
+<time>8th of Feb 2018</time>
+</data></p>
+    </div>
+</div>
+
+            
+
+<h3 id="each-interaction-is-embedded-in-the-conversation-path-these-paths-together-create-a-tree-that-describes-what-action-could-be-performed-at-each-stage-of-the-path">Each interaction is embedded in the conversation path. These paths together create a tree that describes what action could be performed at each stage of the path.</h3>
+
+<h2 id="dependency-rules">Dependency Rules</h2>
+
+<ol>
+<li>At the very beginning the system tries to match the user input with one of <strong>the primary interactions</strong>.</li>
+<li>Children interactions have always preference to be matched.</li>
+<li>If any of the children can’t be matched, the system searches available interactions within the reached interactions in the branch.</li>
+<li>The system searches all previously reached interactions from all branches.</li>
+<li>If any of the interaction can’t be matched, the bot answers with <strong>fallback response</strong>.</li>
+</ol>
+
+<h3 id="good-to-know">Good to know:</h3>
+
+<ul>
+<li>Primary interactions can be matched from any party of the story.</li>
+<li>You can view the story structure to analyze its dependencies in the <strong>story view</strong>.</li>
+<li>If any of the interaction can’t be matched, the bot answers with fallback response.</li>
+</ul>
+
+<blockquote class="__info">
+    <p>
+        Stories don’t need to be followed linearly. Users can return to interactions and jump to other primary branches.
+        There are many ways to manipulate or limit the path. Read about <a href="how-to-use-filters-in-bot-responses.html">filters</a> and <a href="../settings/lifespan.html">lifespan</a>.
+    </p>
+</blockquote>
+
+            
+            <p class="__navigation">
+                <a href="how-to-use-filters-in-bot-responses/index.html"><span>Go to next article</span> <i class="material-icons">arrow_forward</i></a>
+            </p>
+            
+        </article>
+    </div>
+</section>
+
+
+        <footer>
+    <div class="container">
+        <div class="paragraph">
+            <nav>
+                <p>Product</p>
+                <ul class="Footer__menu">
+                    <li class="active"><a href="../../index.html">Home</a></li>
+                    <li><a href="../../features.html">Features</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Integrations</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../integrations/livechat.html">LiveChat</a></li>
+                    <li><a href="../../integrations/chat-widget.html">Chat widget</a></li>
+                    <li><a href="../../integrations/slack.html">Slack</a></li>
+                    <li><a href="../integrations/facebook-messenger-bot/index.html" target="_blank">Messenger</a></li>
+                    <li><a href="../integrations/chatio-bot/index.html" target="_blank">Chat.io</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Support</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../help.html">Help center</a></li>
+                    <li><a href="../../experts.html">Experts marketplace</a></li>
+                    <li><a href="../../docs.html">Docs</a></li>
+                    <li><a href="https://www.facebook.com/groups/295034011008221/" target="_blank">Community group</a></li>
+                </ul>
+            </nav>
+            <img src="../../images/logo_min.svg" alt="BotEngine.ai" />
+        </div>
+        <div class="paragraph">
+            <a href="https://www.facebook.com/BotEngineAI" target="_blank"><i class="__fb"></i></a>
+            <a href="https://twitter.com/BotEngineAI" target="_blank"><i class="__twitter"></i></a>
+            <a href="https://www.producthunt.com/posts/botengine" target="_blank"><i class="__product_hunt"></i></a>
+        </div>
+        <div class="paragraph">
+            <ul class="Footer__menu_inline">
+                <li><a href="../../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="Footer__copyright">
+                Copyright © 2018 LiveChat, Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NQCSXSR');
+    </script>
+    <script src="../../js/app4b80.js?145d2419b57df0ecbba3a238ba7858287c7ab242"></script>
+</body>
+
+<!-- Mirrored from www.botengine.ai/help/interactions/interaction-dependencies by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:31:55 GMT -->
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.botengine.ai/help/interactions/context-fallback by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:31:47 GMT -->
+<head>
+    
+    <title>Context Fallback</title>
+    
+    
+    <meta name="description" content="Set individual messages and actions for unmatched queries, depending on the point of the scenario.">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/appa066.css?442a3212511a0cd29059995f642798a15c2ac484">
+    <link rel="icon" href="../../assets/images/favicon.html">
+    <link rel="shortcuts icon" type="image/x-icon" href="../../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <meta name="slack-app-id" content="A7FTEHPEG">
+    <meta name="twitter:site" content="@botengineai" />
+    <meta name="twitter:creator" content="@botengineai" />
+    <meta property="og:url" content="context-fallback/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Context Fallback" />
+    <meta property="og:description" content="Set individual messages and actions for unmatched queries, depending on the point of the scenario." />
+    <meta property="og:image" content="https://cdn.botengine.ai/website/og_image.png" />
+</head>
+<body>
+    
+    <div id="be"class="help__article">
+        <header>
+    <nav class="Nav theme">
+        <div class="container">
+            <a href="../../index.html" class="Nav__logo __small">
+                <img src="../../images/__nav_logo_mini.svg" alt="BotEngine.ai" />
+            </a>
+
+            <i class="material-icons Nav__menu_icon">menu</i>
+            
+            <a href="../../help.html" class="Nav__section_name"><span>Help Center</span></a>
+            
+            <a class="Nav__button" href="https://app.botengine.ai/">
+                <button class="default __theme_transparent_blue __theme_transparent" target="_blank">Login</button>
+            </a>
+            
+        </div>
+    </nav>
+</header>
+
+        
+
+
+
+
+
+<header class="Nav__header __violet_2">
+    <div class="wrapper"></div>
+</header>
+
+<section class="content">
+    <div class="container">
+        <nav class="__breadcrumbs">
+            <a href="../index.html"><span>Help</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <a href="index.html"><span>Interactions</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <p href="#">Context Fallback</p>
+        </nav>
+    </div>
+
+    
+
+    <div class="container __small">
+        <nav id="help__article_nav" class="help__nav">
+            <p>Interactions</p>
+            <ul>
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="first-steps-with-interactions/index.html">First steps with interactions</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="what-is-welcome-interaction/index.html">Welcome Interaction</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="what-is-fallback-interaction/index.html">Fallback Interaction</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="active">
+                    <a href="context-fallback/index.html">Context Fallback</a>
+                    
+                        
+
+    <ul>
+    
+        
+        
+        
+        
+        <li id="nav-how-does-it-work">
+            <a href="#how-does-it-work">How does it work</a>
+        </li>
+    
+        
+        
+        
+        
+        <li id="nav-the-context-fallback-step-by-step-strong-tutorial-strong">
+            <a href="#the-context-fallback-step-by-step-strong-tutorial-strong">The context fallback step by step tutorial </a>
+        </li>
+    
+    </ul>
+
+
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="interaction-dependencies/index.html">Interaction dependencies</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="how-to-use-filters-in-bot-responses/index.html">Filters</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="cloning-interactions/index.html">Clone interactions</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li >
+                    <a href="set-up-delay-for-responses/index.html">Set a delay for bot responses</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+        </nav>
+
+        
+<div class="share-buttons">
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.botengine.ai%2fhelp%2finteractions%2fcontext-fallback%2f" target="_blank">
+       <i class="__fb"></i>
+   </a>
+
+   <a href="https://twitter.com/intent/tweet/?text=Context%20Fallback&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2finteractions%2fcontext-fallback%2f&amp;via=botengine.ai" target="_blank">
+       <i class="__twitter"></i>
+   </a>
+
+   <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2finteractions%2fcontext-fallback%2f&amp;title=Context%20Fallback&amp;summary=Context%20Fallback&amp;source=https%3a%2f%2fwww.botengine.ai%2fhelp%2finteractions%2fcontext-fallback%2f" target="_blank">
+       <i class="__linkedin"></i>
+   </a>
+</div>
+
+
+        <article>
+            <span class="title">Context Fallback</span>
+            <div class="__authors">
+    <div class="__images">
+        
+            <img src="../../images/help/authors/luiza-jurczyk.png" class="__no-scale" alt="BotEngine.ai" />
+        
+    </div>
+
+    <div class="__description">
+        <div class="title">
+            
+                <p class="author">luiza jurczyk</p>
+            
+        </div>
+
+        <p>Last update: <data>
+  
+
+<time>7th of Aug 2018</time>
+</data></p>
+    </div>
+</div>
+
+            
+
+<h3 id="context-fallback-allows-crafting-individual-fallback-messages-for-each-step-of-the-chatbot-s-scenario">Context fallback allows crafting individual fallback messages for each step of the chatbot’s scenario.</h3>
+
+<p>Even the best-planned chatbot scenario won’t cover all possible cases. Users may ask questions irrelevant to your business, use different wording or type a letter instead of a short query. The <a href="what-is-fallback-interaction/index.html">fallback interaction</a> successfully manages all of the cases when the queries cannot be matched with the user says we’ve predicted. But setting up the fallback to serve all possible cases is difficult but sometimes even impossible.</p>
+
+<p>When you want to show a more precise prompt to your bot’s interlocutors, use the context fallback. This interaction can handle the fallback message at a specific level of the conversation and show to the user the right catchword at the right time, so the conversation isn’t disrupted.</p>
+
+<h2 id="how-does-it-work">How does it work</h2>
+
+<p>To add the context fallback, go to the story view and <strong>click the plus button</strong>. The blue circle will be automatically created for you. Click on it to add bot actions and responses.</p>
+
+<p><img src="../../images/help/__interactions-context-fallback-general-1.png" alt="" /></p>
+
+<ul>
+<li>The context fallback’s scope <strong>is limited to one level of the conversation</strong>.</li>
+<li>Each level of the story can contain <strong>max one context fallback</strong>.</li>
+<li>This fallback <strong>can be edited like any other interaction</strong>. Feel free to add various actions, responses, and filters to it to support all cases.</li>
+<li>The context fallback <strong>isn’t available in the story&rsquo;s root</strong>.</li>
+</ul>
+
+<h2 id="the-context-fallback-step-by-step-strong-tutorial-strong">The context fallback step by step <strong>tutorial </strong></h2>
+
+<ol>
+<li>Create a new story and add a few interactions. Note, that the <code>start</code> and <code>else</code> default interactions have been automatically added to your story. The first one triggers automatically when a user opens the chat window, the second one is the general default fallback.
+<img src="../../images/help/__interactions-context-fallback-1.png" alt="" /></li>
+<li>To add a new oontext fallback, <strong>click the plus button</strong>. Remember that option isn’t available in the story’s root.
+<video autoplay loop>
+<source src="../../images/help/__interactions-context-fallback-2.qt" type="video/mp4">
+</video></li>
+<li><strong>Open the context fallback</strong> and add bot actions and responses to it.
+<img src="../../images/help/__interaction-context-fallback-3.png" alt="" /></li>
+<li><strong>Save</strong> your work. The context fallback is ready!</li>
+</ol>
+
+            
+            <p class="__navigation">
+                <a href="interaction-dependencies/index.html"><span>Go to next article</span> <i class="material-icons">arrow_forward</i></a>
+            </p>
+            
+        </article>
+    </div>
+</section>
+
+
+        <footer>
+    <div class="container">
+        <div class="paragraph">
+            <nav>
+                <p>Product</p>
+                <ul class="Footer__menu">
+                    <li class="active"><a href="../../index.html">Home</a></li>
+                    <li><a href="../../features.html">Features</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Integrations</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../integrations/livechat.html">LiveChat</a></li>
+                    <li><a href="../../integrations/chat-widget.html">Chat widget</a></li>
+                    <li><a href="../../integrations/slack.html">Slack</a></li>
+                    <li><a href="../integrations/facebook-messenger-bot/index.html" target="_blank">Messenger</a></li>
+                    <li><a href="../integrations/chatio-bot/index.html" target="_blank">Chat.io</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Support</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../help.html">Help center</a></li>
+                    <li><a href="../../experts.html">Experts marketplace</a></li>
+                    <li><a href="../../docs.html">Docs</a></li>
+                    <li><a href="https://www.facebook.com/groups/295034011008221/" target="_blank">Community group</a></li>
+                </ul>
+            </nav>
+            <img src="../../images/logo_min.svg" alt="BotEngine.ai" />
+        </div>
+        <div class="paragraph">
+            <a href="https://www.facebook.com/BotEngineAI" target="_blank"><i class="__fb"></i></a>
+            <a href="https://twitter.com/BotEngineAI" target="_blank"><i class="__twitter"></i></a>
+            <a href="https://www.producthunt.com/posts/botengine" target="_blank"><i class="__product_hunt"></i></a>
+        </div>
+        <div class="paragraph">
+            <ul class="Footer__menu_inline">
+                <li><a href="../../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="Footer__copyright">
+                Copyright © 2018 LiveChat, Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NQCSXSR');
+    </script>
+    <script src="../../js/apped7c.js?1cb3b35ef9efa7f4389002c2de49f0099925e6bf"></script>
+</body>
+
+<!-- Mirrored from www.botengine.ai/help/interactions/context-fallback by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:31:53 GMT -->
+</html>

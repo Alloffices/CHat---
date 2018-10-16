@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.botengine.ai/help/system-entities/sys-number by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:32:56 GMT -->
+<head>
+    
+    <title>Sys.number</title>
+    
+    
+    <meta name="description" content="Grab any number your client sends to your chatbot, including negative numbers, decimals and quintillions">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/app2a10.css?2375c111fab0121248c0d992f55dc13b054ee8a0">
+    <link rel="icon" href="../../assets/images/favicon.html">
+    <link rel="shortcuts icon" type="image/x-icon" href="../../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <meta name="slack-app-id" content="A7FTEHPEG">
+    <meta name="twitter:site" content="@botengineai" />
+    <meta name="twitter:creator" content="@botengineai" />
+    <meta property="og:url" content="sys-number/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Sys.number" />
+    <meta property="og:description" content="Grab any number your client sends to your chatbot, including negative numbers, decimals and quintillions" />
+    <meta property="og:image" content="https://cdn.botengine.ai/website/og_image.png" />
+</head>
+<body>
+    
+    <div id="be"class="help__article">
+        <header>
+    <nav class="Nav theme">
+        <div class="container">
+            <a href="../../index.html" class="Nav__logo __small">
+                <img src="../../images/__nav_logo_mini.svg" alt="BotEngine.ai" />
+            </a>
+
+            <i class="material-icons Nav__menu_icon">menu</i>
+            
+            <a href="../../help.html" class="Nav__section_name"><span>Help Center</span></a>
+            
+            <a class="Nav__button" href="https://app.botengine.ai/">
+                <button class="default __theme_transparent_blue __theme_transparent" target="_blank">Login</button>
+            </a>
+            
+        </div>
+    </nav>
+</header>
+
+        
+
+
+
+
+
+<header class="Nav__header __violet_2">
+    <div class="wrapper"></div>
+</header>
+
+<section class="content">
+    <div class="container">
+        <nav class="__breadcrumbs">
+            <a href="../index.html"><span>Help</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <a href="index.html"><span>System entities</span></a>
+            <i class="material-icons">keyboard_arrow_right</i>
+            <p href="#">Sys.number</p>
+        </nav>
+    </div>
+
+    
+
+    <div class="container __small">
+        <nav id="help__article_nav" class="help__nav">
+            <p>System entities</p>
+            <ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="what-are-system-entities/index.html">What are System Entities</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="how-to-use-system-entities/index.html">Add system entities to your story</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="sys-email/index.html">Sys.email</a>
+                    
+                </li>
+                
+                
+                
+                <li >
+                    <a href="sys-integer/index.html">Sys.integer</a>
+                    
+                </li>
+                
+                
+                
+                <li class="active">
+                    <a href="sys-number/index.html">Sys.number</a>
+                    
+                        
+
+    <ul>
+    
+        
+        
+        
+        
+        <li id="nav-chatbot-example-with-the-sys-number-entity">
+            <a href="#chatbot-example-with-the-sys-number-entity">Chatbot example with the sys.number entity</a>
+        </li>
+    
+    </ul>
+
+
+                    
+                </li>
+                
+                
+                
+                <li >
+                    <a href="sys-phone-number/index.html">Sys.phone-number</a>
+                    
+                </li>
+                
+                
+                
+                <li >
+                    <a href="sys-temperature/index.html">Sys.temperature</a>
+                    
+                </li>
+                
+                
+                
+                <li >
+                    <a href="sys-url/index.html">Sys.url</a>
+                    
+                </li>
+                
+                
+                
+                <li >
+                    <a href="sys-yes-and-sys-no/index.html">Sys.yes and sys.no</a>
+                    
+                </li>
+                
+                
+                
+                <li >
+                    <a href="sys-yes-no/index.html">Sys.yes-no</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a href="the-list-of-system-entities/index.html">The list of System Entities</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+        </nav>
+
+        
+<div class="share-buttons">
+   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.botengine.ai%2fhelp%2fsystem-entities%2fsys-number%2f" target="_blank">
+       <i class="__fb"></i>
+   </a>
+
+   <a href="https://twitter.com/intent/tweet/?text=Sys.number&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2fsystem-entities%2fsys-number%2f&amp;via=botengine.ai" target="_blank">
+       <i class="__twitter"></i>
+   </a>
+
+   <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.botengine.ai%2fhelp%2fsystem-entities%2fsys-number%2f&amp;title=Sys.number&amp;summary=Sys.number&amp;source=https%3a%2f%2fwww.botengine.ai%2fhelp%2fsystem-entities%2fsys-number%2f" target="_blank">
+       <i class="__linkedin"></i>
+   </a>
+</div>
+
+
+        <article>
+            <span class="title">Sys.number</span>
+            <div class="__authors">
+    <div class="__images">
+        
+            <img src="../../images/help/authors/luiza-jurczyk.png" class="__no-scale" alt="BotEngine.ai" />
+        
+    </div>
+
+    <div class="__description">
+        <div class="title">
+            
+                <p class="author">luiza jurczyk</p>
+            
+        </div>
+
+        <p>Last update: <data>
+  
+
+<time>31st of Jul 2018</time>
+</data></p>
+    </div>
+</div>
+
+            
+
+<h3 id="grab-any-number-your-client-sends-to-your-chatbot-including-negative-numbers-decimals-and-quintillions">Grab any number your client sends to your chatbot, including negative numbers, decimals, and quintillions.</h3>
+
+<p>With <code>sys.number</code> you can make use of any number. Add this entity to the user says section to catch numbers entered by your customers and pass them to your databases and web services.</p>
+
+<p>The number can be anything: the amount of money, height, weight, latitude, and longitude, user ID or whatever you need. The system automatically exchanges numerals to numbers analyzing the user input from left to the right.</p>
+
+<ul>
+<li><code>four hundred thirty-five million two hundred forty thousand</code> = 435240000</li>
+<li><code>1,10</code> = 10.1</li>
+<li><code>3000K</code> = 3000000</li>
+</ul>
+
+<h2 id="chatbot-example-with-the-sys-number-entity">Chatbot example with the <strong>sys.number</strong> entity</h2>
+
+<p>To understand how this entity works, we’ll create a short scenario for a real estate chatbot that gathers information about advertised properties. To recognize the estimated price entered by our potential customers, we’ll use the sys.number entity.</p>
+
+<blockquote class="__info">
+    <p>
+        Type double curly brackets <code><span class="brackets"> ... </span></code> to trigger the entity window and select the one you you need.
+    </p>
+</blockquote>
+
+<ol>
+<li>Create a new story called Real Estate Bot. Inside the story, add a new interaction triggered by the following input:
+<img src="../../images/help/__sys-number-1.png" alt="" /></li>
+<li>Go to the bot responses and add a text message. This is the moment when the bot asks for the estimated price.
+<img src="../../images/help/__sys-number-2.png" alt="" /></li>
+<li>Add a child interaction below and enter the sys.number entity into the user says fields.
+
+<ul>
+<li>Validation Entity &ndash; choose Sys.number</li>
+<li>Save input to attribute &ndash; give a name to your new attribute
+<img src="../../images/help/__sys-number-3.png" alt="" /></li>
+</ul></li>
+<li>To make sure that the bot collected the right value, ask users to confirm it.</li>
+<li>Save your work and test the real estate bot.
+<img src="../../images/help/__sys-number-4.png" alt="" /></li>
+<li>Save your work and test the real estate bot.
+<video class="__40" autoplay loop>
+<source src="../../images/help/__sys-number-5.qt" type="video/mp4">
+</video></li>
+<li>Our new <code>sys.number</code> works fine. Well done!</li>
+</ol>
+
+            
+            <p class="__navigation">
+                <a href="sys-phone-number/index.html"><span>Go to next article</span> <i class="material-icons">arrow_forward</i></a>
+            </p>
+            
+        </article>
+    </div>
+</section>
+
+
+        <footer>
+    <div class="container">
+        <div class="paragraph">
+            <nav>
+                <p>Product</p>
+                <ul class="Footer__menu">
+                    <li class="active"><a href="../../index.html">Home</a></li>
+                    <li><a href="../../features.html">Features</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Integrations</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../integrations/livechat.html">LiveChat</a></li>
+                    <li><a href="../../integrations/chat-widget.html">Chat widget</a></li>
+                    <li><a href="../../integrations/slack.html">Slack</a></li>
+                    <li><a href="../integrations/facebook-messenger-bot/index.html" target="_blank">Messenger</a></li>
+                    <li><a href="../integrations/chatio-bot/index.html" target="_blank">Chat.io</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <p>Support</p>
+                <ul class="Footer__menu">
+                    <li><a href="../../help.html">Help center</a></li>
+                    <li><a href="../../experts.html">Experts marketplace</a></li>
+                    <li><a href="../../docs.html">Docs</a></li>
+                    <li><a href="https://www.facebook.com/groups/295034011008221/" target="_blank">Community group</a></li>
+                </ul>
+            </nav>
+            <img src="../../images/logo_min.svg" alt="BotEngine.ai" />
+        </div>
+        <div class="paragraph">
+            <a href="https://www.facebook.com/BotEngineAI" target="_blank"><i class="__fb"></i></a>
+            <a href="https://twitter.com/BotEngineAI" target="_blank"><i class="__twitter"></i></a>
+            <a href="https://www.producthunt.com/posts/botengine" target="_blank"><i class="__product_hunt"></i></a>
+        </div>
+        <div class="paragraph">
+            <ul class="Footer__menu_inline">
+                <li><a href="../../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <p class="Footer__copyright">
+                Copyright © 2018 LiveChat, Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NQCSXSR');
+    </script>
+    <script src="../../js/app9223.js?3c0a16d6c0d09a085a9faca8912fc6efcab8f149"></script>
+</body>
+
+<!-- Mirrored from www.botengine.ai/help/system-entities/sys-number by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 21:33:03 GMT -->
+</html>
